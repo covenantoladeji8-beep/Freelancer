@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Investor Page | Freelancer</title>
+  <meta name="description" content="Learn about our company and our investment opportunities. Enter your email to keep up to date with key investor information.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="pinky-template investorPage-body">
+
+  <!-- ========================================================================
+       1. GLOBAL NAVIGATION BAR (HEADER)
+       ======================================================================== -->
+  <header class="fl-header" id="top">
+    <div class="header-inner">
+      <!-- Left side: Logo & Primary nav -->
+      <div class="header-left">
+        <a href="#" class="header-logo" aria-label="Freelancer Home">
+          <img src="image/imgi_1_fl-logo-c555380d.svg" alt="Freelancer Logo" class="logo-img" width="138" height="34">
+        </a>
+        <nav class="primary-nav" aria-label="Main navigation">
+          <ul class="nav-menu">
+            <li><a href="#" class="nav-link">How It Works</a></li>
+            <li><a href="#" class="nav-link">Browse Jobs</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Right side: Auth links & CTA button -->
+      <div class="header-right">
+        <a href="#" class="auth-link">Log In</a>
+        <a href="#" class="auth-link">Sign Up</a>
+        <a href="#" class="btn-post-project">Post a Project</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Sub-navbar band -->
+  <div class="sub-navbar-compat"></div>
+
+  <main id="main" class="main-content">
+
+    <!-- ========================================================================
+         2. HERO BANNER SECTION (Investor Centre)
+         ======================================================================== -->
+    <section class="masterBanner-section investorPage-banner-primary">
+      <div class="masterBanner-overlay"></div>
+      <div class="container masterBanner-inner">
+        <div class="masterBanner-content">
+          <h1 class="masterBanner-title">Investor Centre</h1>
+          <p class="masterBanner-byline">
+            Learn about our company and our investment opportunities. Enter your email to keep up to date with key investor information.
+          </p>
+          <div class="masterBanner-cta">
+            <form id="investor-subscribe-form" class="fl-form fl-form--inline investor-subscribe-form" action="#" method="post" onsubmit="return false;">
+              <div class="form-step">
+                <div class="input-btn-combo">
+                  <input type="email" id="investor-subscribe-input" class="xlarge-input" placeholder="Enter your email" required>
+                  <button type="submit" class="btn btn-xlarge btn-info">Subscribe</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         3. MAIN INVESTOR WORKSPACE: SIDEBAR & TAB CONTENT (Pure CSS Tabs)
+         ======================================================================== -->
+    <section class="site-section-inner container">
+      
+      <!-- Pure CSS Tabs Controller via Radio Buttons -->
+      <input type="radio" name="investor-tab" id="tab-shareholder" class="tab-radio" checked>
+      <input type="radio" name="investor-tab" id="tab-reports" class="tab-radio">
+      <input type="radio" name="investor-tab" id="tab-faq" class="tab-radio">
+      <input type="radio" name="investor-tab" id="tab-governance" class="tab-radio">
+      <input type="radio" name="investor-tab" id="tab-foundation" class="tab-radio">
+
+      <div class="investor-layout-grid">
+        
+        <!-- LEFT SIDEBAR -->
+        <aside class="investorSidebar">
+          <div class="pressSidebar-header">
+            <nav class="sidebarNav" aria-label="Investor navigation">
+              <ul class="sidebarNav-list">
+                <li class="sidebarNav-list-item nav-item-shareholder">
+                  <label for="tab-shareholder" class="sidebarNav-list-link">Shareholder Information</label>
+                </li>
+                <li class="sidebarNav-list-item nav-item-reports">
+                  <label for="tab-reports" class="sidebarNav-list-link">Reports &amp; Presentations</label>
+                </li>
+                <li class="sidebarNav-list-item nav-item-faq">
+                  <label for="tab-faq" class="sidebarNav-list-link">Shareholder FAQ</label>
+                </li>
+                <li class="sidebarNav-list-item nav-item-governance">
+                  <label for="tab-governance" class="sidebarNav-list-link">Corporate Governance</label>
+                </li>
+                <li class="sidebarNav-list-item nav-item-foundation">
+                  <label for="tab-foundation" class="sidebarNav-list-link">Foundation Shareholder Program</label>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="pressSidebar-content">
+            <div class="pressSidebarContact">
+              <h5 class="contact-title">Shareholder Inquiries</h5>
+              <p class="contact-line company-name">Boardroom Pty Limited</p>
+              <p class="contact-line">GPO Box 3993</p>
+              <p class="contact-line">Sydney NSW 2001</p>
+              <p class="contact-line"><span class="contact-label">Telephone:</span> 1300 737 760</p>
+              <p class="contact-line"><span class="contact-label">International:</span> +61 2 9290 9600</p>
+              <p class="contact-line"><span class="contact-label">Facsimile:</span> +61 2 9279 0664</p>
+              <p class="contact-line"><span class="contact-label">Email:</span> <a href="mailto:enquiries@boardroomlimited.com.au" class="contact-link">enquiries@boardroomlimited.com.au</a></p>
+              <p class="contact-line"><span class="contact-label">Website:</span> <a href="http://www.boardroomlimited.com.au" target="_blank" rel="noopener noreferrer" class="contact-link">www.boardroomlimited.com.au</a></p>
+            </div>
+
+            <div class="pressSidebarContact">
+              <h5 class="contact-title">Investor Relations</h5>
+              <p class="contact-line"><span class="contact-label">Email:</span> <a href="mailto:investor@freelancer.com" class="contact-link">investor@freelancer.com</a></p>
+            </div>
+          </div>
+        </aside>
+
+        <!-- RIGHT MAIN CONTENT PANES -->
+        <div class="investorMain">
+
+          <!-- TAB PANE 1: SHAREHOLDER INFORMATION -->
+          <div id="ShareholderInformation" class="investorMain-content content-shareholder">
+            <h2 class="investorMain-title">Shareholder Information</h2>
+
+            <section class="info-block">
+              <h5 class="info-heading">Freelancer Limited</h5>
+              <p class="investorMain-content-desc">
+                Freelancer is the world's largest freelancing and crowdsourcing marketplace by number of users and projects. Freelancer was founded in 2009 and is listed on the Australian Securities Exchange (ASX: FLN) and OTCQX Best Markets in the United States (OTCQX: FRLCY).
+              </p>
+            </section>
+
+            <section class="info-block">
+              <h5 class="info-heading">Share Price</h5>
+              <p class="investorMain-content-desc">Our current share price can be found here:</p>
+              <ul class="investorMain-content-list">
+                <li>
+                  <strong>OTCQX (United States):</strong> <a href="https://www.otcmarkets.com/stock/FRLCY/quote" target="_blank" rel="noopener noreferrer">https://www.otcmarkets.com/stock/FRLCY/quote</a>
+                </li>
+                <li>
+                  <strong>ASX (Australia):</strong> <a href="https://www2.asx.com.au/markets/company/FLN" target="_blank" rel="noopener noreferrer">https://www2.asx.com.au/markets/company/FLN</a>
+                </li>
+              </ul>
+            </section>
+
+            <section class="info-block">
+              <h5 class="info-heading">Company Announcements</h5>
+              <p class="investorMain-content-desc">For a full list of recent company announcements please visit:</p>
+              <ul class="investorMain-content-list">
+                <li>
+                  <strong>ASX Announcements:</strong> <a href="https://www2.asx.com.au/markets/company/FLN" target="_blank" rel="noopener noreferrer">https://www2.asx.com.au/markets/company/FLN</a>
+                </li>
+              </ul>
+            </section>
+
+            <section class="info-block">
+              <h5 class="info-heading">Investing from the United States</h5>
+              <p class="investorMain-content-desc">
+                Freelancer Limited has established a sponsored Level 1 American Depositary Receipt (ADR) program in the United States. ADRs trade over-the-counter on the OTCQX Best Market under the ticker symbol <strong>FRLCY</strong>. Each Freelancer Limited ADR represents five (5) ordinary shares in Freelancer Limited.
+              </p>
+              <p class="investorMain-content-desc">
+                The Bank of New York Mellon acts as depositary bank for the ADR program. BNY Mellon's ADR division provides comprehensive information for investors at <a href="https://www.adrbnymellon.com" target="_blank" rel="noopener noreferrer">www.adrbnymellon.com</a>.
+              </p>
+            </section>
+
+            <section class="info-block">
+              <h5 class="info-heading">Investing From Australia</h5>
+              <p class="investorMain-content-desc">
+                You can buy Freelancer shares through a broker that supports shares on the Australian Securities Exchange (ASX). Freelancer's ticker is <strong>ASX: FLN</strong>. You should seek advice from a financial services professional before investing.
+              </p>
+              <p class="investorMain-content-desc callout-note">
+                <strong>Note:</strong> ASX has a rule called the Minimum Marketable Parcel (MMP). For any first-time purchase of a given ASX stock, you must buy a "marketable parcel" worth at least A$500 before brokerage fees.
+              </p>
+            </section>
+
+            <section class="info-block">
+              <h5 class="info-heading">Investing From Other Countries</h5>
+              <p class="investorMain-content-desc">
+                Freelancer shares can generally be purchased through international brokers that support trading on the Australian Securities Exchange (ASX) or the US OTCQX market. Interactive Brokers is an online broker that takes registrations from residents of many countries around the world and supports shares traded on the ASX.
+              </p>
+            </section>
+
+            <section class="info-block">
+              <h5 class="info-heading">Managing Your Shares</h5>
+              <p class="investorMain-content-desc">
+                Freelancer Limited's share register is maintained by Boardroom Pty Limited. Shareholders can manage their holdings, update banking details, elect communications preferences, and view dividend statements online via the Boardroom InvestorServe portal at <a href="https://www.investorserve.com.au" target="_blank" rel="noopener noreferrer">www.investorserve.com.au</a>.
+              </p>
+            </section>
+          </div>
+
+          <!-- TAB PANE 2: REPORTS & PRESENTATIONS -->
+          <div id="ReportsAndPresentations" class="investorMain-content content-reports">
+            <h2 class="investorMain-title">Reports &amp; Presentations</h2>
+
+            <ul class="downloadList">
+              <li class="downloadList-item">
+                <span class="downloadList-icon">
+                  <svg class="flicon-pdf" viewBox="0 0 16 16" width="16" height="16">
+                    <path fill="currentColor" d="M13.156 9.211c-0.213-0.21-0.686-0.321-1.406-0.331-0.487-0.005-1.073 0.038-1.69 0.124-0.276-0.159-0.561-0.333-0.784-0.542-0.601-0.561-1.103-1.34-1.415-2.197 0.020-0.080 0.038-0.15 0.054-0.222 0 0 0.339-1.923 0.249-2.573-0.012-0.089-0.020-0.115-0.044-0.184l-0.029-0.076c-0.092-0.212-0.273-0.437-0.556-0.425l-0.171-0.005c-0.316 0-0.573 0.161-0.64 0.403-0.205 0.757 0.007 1.889 0.39 3.355l-0.098 0.239c-0.275 0.67-0.619 1.345-0.923 1.94l-0.040 0.077c-0.32 0.626-0.61 1.157-0.873 1.607l-0.271 0.144c-0.020 0.010-0.485 0.257-0.594 0.323-0.926 0.553-1.539 1.18-1.641 1.678-0.032 0.159-0.008 0.362 0.156 0.456l0.263 0.132c0.114 0.057 0.234 0.086 0.357 0.086 0.659 0 1.425-0.821 2.48-2.662 1.218-0.396 2.604-0.726 3.819-0.908 0.926 0.521 2.065 0.884 2.783 0.884 0.128 0 0.238-0.012 0.327-0.036 0.138-0.037 0.254-0.115 0.325-0.222 0.139-0.21 0.168-0.499 0.13-0.795-0.011-0.088-0.081-0.197-0.157-0.271zM14 14.75c0 0.136-0.114 0.25-0.25 0.25h-11.5c-0.135 0-0.25-0.114-0.25-0.25v-13.5c0-0.135 0.115-0.25 0.25-0.25h7.5c0.075 0 0.16 0.010 0.25 0.027v3.973h3.973c0.017 0.090 0.027 0.174 0.027 0.25v9.5z"/>
+                  </svg>
+                </span>
+                <span class="downloadList-name">
+                  <a href="#">1H26 Interim Financial Report &amp; Appendix 4D</a>
+                </span>
+                <span class="downloadList-date">Jul 28, 2026</span>
+                <div class="downloadList-action">
+                  <a href="#" aria-label="Download 1H26 Interim Financial Report">
+                    <svg class="flicon-download-alt" viewBox="0 0 48 48" width="16" height="16">
+                      <path fill="none" stroke="currentColor" stroke-width="3" d="M44 36v5c0 2.8-2.2 5-5 5H9c-2.8 0-5-2.2-5-5v-5M24 36V4M36 24L24 36 12 24"/>
+                    </svg>
+                  </a>
+                </div>
+              </li>
+
+              <li class="downloadList-item">
+                <span class="downloadList-icon">
+                  <svg class="flicon-pdf" viewBox="0 0 16 16" width="16" height="16">
+                    <path fill="currentColor" d="M13.156 9.211c-0.213-0.21-0.686-0.321-1.406-0.331-0.487-0.005-1.073 0.038-1.69 0.124-0.276-0.159-0.561-0.333-0.784-0.542-0.601-0.561-1.103-1.34-1.415-2.197 0.020-0.080 0.038-0.15 0.054-0.222 0 0 0.339-1.923 0.249-2.573-0.012-0.089-0.020-0.115-0.044-0.184l-0.029-0.076c-0.092-0.212-0.273-0.437-0.556-0.425l-0.171-0.005c-0.316 0-0.573 0.161-0.64 0.403-0.205 0.757 0.007 1.889 0.39 3.355l-0.098 0.239c-0.275 0.67-0.619 1.345-0.923 1.94l-0.040 0.077c-0.32 0.626-0.61 1.157-0.873 1.607l-0.271 0.144c-0.020 0.010-0.485 0.257-0.594 0.323-0.926 0.553-1.539 1.18-1.641 1.678-0.032 0.159-0.008 0.362 0.156 0.456l0.263 0.132c0.114 0.057 0.234 0.086 0.357 0.086 0.659 0 1.425-0.821 2.48-2.662 1.218-0.396 2.604-0.726 3.819-0.908 0.926 0.521 2.065 0.884 2.783 0.884 0.128 0 0.238-0.012 0.327-0.036 0.138-0.037 0.254-0.115 0.325-0.222 0.139-0.21 0.168-0.499 0.13-0.795-0.011-0.088-0.081-0.197-0.157-0.271zM14 14.75c0 0.136-0.114 0.25-0.25 0.25h-11.5c-0.135 0-0.25-0.114-0.25-0.25v-13.5c0-0.135 0.115-0.25 0.25-0.25h7.5c0.075 0 0.16 0.010 0.25 0.027v3.973h3.973c0.017 0.090 0.027 0.174 0.027 0.25v9.5z"/>
+                  </svg>
+                </span>
+                <span class="downloadList-name">
+                  <a href="#">1H26 Financial Results Presentation</a>
+                </span>
+                <span class="downloadList-date">Jul 28, 2026</span>
+                <div class="downloadList-action">
+                  <a href="#" aria-label="Download 1H26 Financial Results Presentation">
+                    <svg class="flicon-download-alt" viewBox="0 0 48 48" width="16" height="16">
+                      <path fill="none" stroke="currentColor" stroke-width="3" d="M44 36v5c0 2.8-2.2 5-5 5H9c-2.8 0-5-2.2-5-5v-5M24 36V4M36 24L24 36 12 24"/>
+                    </svg>
+                  </a>
+                </div>
+              </li>
+
+              <li class="downloadList-item">
+                <span class="downloadList-icon">
+                  <svg class="flicon-pdf" viewBox="0 0 16 16" width="16" height="16">
+                    <path fill="currentColor" d="M13.156 9.211c-0.213-0.21-0.686-0.321-1.406-0.331-0.487-0.005-1.073 0.038-1.69 0.124-0.276-0.159-0.561-0.333-0.784-0.542-0.601-0.561-1.103-1.34-1.415-2.197 0.020-0.080 0.038-0.15 0.054-0.222 0 0 0.339-1.923 0.249-2.573-0.012-0.089-0.020-0.115-0.044-0.184l-0.029-0.076c-0.092-0.212-0.273-0.437-0.556-0.425l-0.171-0.005c-0.316 0-0.573 0.161-0.64 0.403-0.205 0.757 0.007 1.889 0.39 3.355l-0.098 0.239c-0.275 0.67-0.619 1.345-0.923 1.94l-0.040 0.077c-0.32 0.626-0.61 1.157-0.873 1.607l-0.271 0.144c-0.020 0.010-0.485 0.257-0.594 0.323-0.926 0.553-1.539 1.18-1.641 1.678-0.032 0.159-0.008 0.362 0.156 0.456l0.263 0.132c0.114 0.057 0.234 0.086 0.357 0.086 0.659 0 1.425-0.821 2.48-2.662 1.218-0.396 2.604-0.726 3.819-0.908 0.926 0.521 2.065 0.884 2.783 0.884 0.128 0 0.238-0.012 0.327-0.036 0.138-0.037 0.254-0.115 0.325-0.222 0.139-0.21 0.168-0.499 0.13-0.795-0.011-0.088-0.081-0.197-0.157-0.271zM14 14.75c0 0.136-0.114 0.25-0.25 0.25h-11.5c-0.135 0-0.25-0.114-0.25-0.25v-13.5c0-0.135 0.115-0.25 0.25-0.25h7.5c0.075 0 0.16 0.010 0.25 0.027v3.973h3.973c0.017 0.090 0.027 0.174 0.027 0.25v9.5z"/>
+                  </svg>
+                </span>
+                <span class="downloadList-name">
+                  <a href="#">1H26 Appendix 4C &amp; Quarterly Activity Report</a>
+                </span>
+                <span class="downloadList-date">Jul 28, 2026</span>
+                <div class="downloadList-action">
+                  <a href="#" aria-label="Download 1H26 Appendix 4C">
+                    <svg class="flicon-download-alt" viewBox="0 0 48 48" width="16" height="16">
+                      <path fill="none" stroke="currentColor" stroke-width="3" d="M44 36v5c0 2.8-2.2 5-5 5H9c-2.8 0-5-2.2-5-5v-5M24 36V4M36 24L24 36 12 24"/>
+                    </svg>
+                  </a>
+                </div>
+              </li>
+
+              <li class="downloadList-item">
+                <span class="downloadList-icon">
+                  <svg class="flicon-pdf" viewBox="0 0 16 16" width="16" height="16">
+                    <path fill="currentColor" d="M13.156 9.211c-0.213-0.21-0.686-0.321-1.406-0.331-0.487-0.005-1.073 0.038-1.69 0.124-0.276-0.159-0.561-0.333-0.784-0.542-0.601-0.561-1.103-1.34-1.415-2.197 0.020-0.080 0.038-0.15 0.054-0.222 0 0 0.339-1.923 0.249-2.573-0.012-0.089-0.020-0.115-0.044-0.184l-0.029-0.076c-0.092-0.212-0.273-0.437-0.556-0.425l-0.171-0.005c-0.316 0-0.573 0.161-0.64 0.403-0.205 0.757 0.007 1.889 0.39 3.355l-0.098 0.239c-0.275 0.67-0.619 1.345-0.923 1.94l-0.040 0.077c-0.32 0.626-0.61 1.157-0.873 1.607l-0.271 0.144c-0.020 0.010-0.485 0.257-0.594 0.323-0.926 0.553-1.539 1.18-1.641 1.678-0.032 0.159-0.008 0.362 0.156 0.456l0.263 0.132c0.114 0.057 0.234 0.086 0.357 0.086 0.659 0 1.425-0.821 2.48-2.662 1.218-0.396 2.604-0.726 3.819-0.908 0.926 0.521 2.065 0.884 2.783 0.884 0.128 0 0.238-0.012 0.327-0.036 0.138-0.037 0.254-0.115 0.325-0.222 0.139-0.21 0.168-0.499 0.13-0.795-0.011-0.088-0.081-0.197-0.157-0.271zM14 14.75c0 0.136-0.114 0.25-0.25 0.25h-11.5c-0.135 0-0.25-0.114-0.25-0.25v-13.5c0-0.135 0.115-0.25 0.25-0.25h7.5c0.075 0 0.16 0.010 0.25 0.027v3.973h3.973c0.017 0.090 0.027 0.174 0.027 0.25v9.5z"/>
+                  </svg>
+                </span>
+                <span class="downloadList-name">
+                  <a href="#">1Q26 Appendix 4C &amp; Quarterly Activity Report</a>
+                </span>
+                <span class="downloadList-date">Apr 22, 2026</span>
+                <div class="downloadList-action">
+                  <a href="#" aria-label="Download 1Q26 Appendix 4C">
+                    <svg class="flicon-download-alt" viewBox="0 0 48 48" width="16" height="16">
+                      <path fill="none" stroke="currentColor" stroke-width="3" d="M44 36v5c0 2.8-2.2 5-5 5H9c-2.8 0-5-2.2-5-5v-5M24 36V4M36 24L24 36 12 24"/>
+                    </svg>
+                  </a>
+                </div>
+              </li>
+
+              <li class="downloadList-item">
+                <span class="downloadList-icon">
+                  <svg class="flicon-pdf" viewBox="0 0 16 16" width="16" height="16">
+                    <path fill="currentColor" d="M13.156 9.211c-0.213-0.21-0.686-0.321-1.406-0.331-0.487-0.005-1.073 0.038-1.69 0.124-0.276-0.159-0.561-0.333-0.784-0.542-0.601-0.561-1.103-1.34-1.415-2.197 0.020-0.080 0.038-0.15 0.054-0.222 0 0 0.339-1.923 0.249-2.573-0.012-0.089-0.020-0.115-0.044-0.184l-0.029-0.076c-0.092-0.212-0.273-0.437-0.556-0.425l-0.171-0.005c-0.316 0-0.573 0.161-0.64 0.403-0.205 0.757 0.007 1.889 0.39 3.355l-0.098 0.239c-0.275 0.67-0.619 1.345-0.923 1.94l-0.040 0.077c-0.32 0.626-0.61 1.157-0.873 1.607l-0.271 0.144c-0.020 0.010-0.485 0.257-0.594 0.323-0.926 0.553-1.539 1.18-1.641 1.678-0.032 0.159-0.008 0.362 0.156 0.456l0.263 0.132c0.114 0.057 0.234 0.086 0.357 0.086 0.659 0 1.425-0.821 2.48-2.662 1.218-0.396 2.604-0.726 3.819-0.908 0.926 0.521 2.065 0.884 2.783 0.884 0.128 0 0.238-0.012 0.327-0.036 0.138-0.037 0.254-0.115 0.325-0.222 0.139-0.21 0.168-0.499 0.13-0.795-0.011-0.088-0.081-0.197-0.157-0.271zM14 14.75c0 0.136-0.114 0.25-0.25 0.25h-11.5c-0.135 0-0.25-0.114-0.25-0.25v-13.5c0-0.135 0.115-0.25 0.25-0.25h7.5c0.075 0 0.16 0.010 0.25 0.027v3.973h3.973c0.017 0.090 0.027 0.174 0.027 0.25v9.5z"/>
+                  </svg>
+                </span>
+                <span class="downloadList-name">
+                  <a href="#">2025 Annual Report &amp; Appendix 4E</a>
+                </span>
+                <span class="downloadList-date">Feb 25, 2026</span>
+                <div class="downloadList-action">
+                  <a href="#" aria-label="Download 2025 Annual Report">
+                    <svg class="flicon-download-alt" viewBox="0 0 48 48" width="16" height="16">
+                      <path fill="none" stroke="currentColor" stroke-width="3" d="M44 36v5c0 2.8-2.2 5-5 5H9c-2.8 0-5-2.2-5-5v-5M24 36V4M36 24L24 36 12 24"/>
+                    </svg>
+                  </a>
+                </div>
+              </li>
+
+              <li class="downloadList-item">
+                <span class="downloadList-icon">
+                  <svg class="flicon-pdf" viewBox="0 0 16 16" width="16" height="16">
+                    <path fill="currentColor" d="M13.156 9.211c-0.213-0.21-0.686-0.321-1.406-0.331-0.487-0.005-1.073 0.038-1.69 0.124-0.276-0.159-0.561-0.333-0.784-0.542-0.601-0.561-1.103-1.34-1.415-2.197 0.020-0.080 0.038-0.15 0.054-0.222 0 0 0.339-1.923 0.249-2.573-0.012-0.089-0.020-0.115-0.044-0.184l-0.029-0.076c-0.092-0.212-0.273-0.437-0.556-0.425l-0.171-0.005c-0.316 0-0.573 0.161-0.64 0.403-0.205 0.757 0.007 1.889 0.39 3.355l-0.098 0.239c-0.275 0.67-0.619 1.345-0.923 1.94l-0.040 0.077c-0.32 0.626-0.61 1.157-0.873 1.607l-0.271 0.144c-0.020 0.010-0.485 0.257-0.594 0.323-0.926 0.553-1.539 1.18-1.641 1.678-0.032 0.159-0.008 0.362 0.156 0.456l0.263 0.132c0.114 0.057 0.234 0.086 0.357 0.086 0.659 0 1.425-0.821 2.48-2.662 1.218-0.396 2.604-0.726 3.819-0.908 0.926 0.521 2.065 0.884 2.783 0.884 0.128 0 0.238-0.012 0.327-0.036 0.138-0.037 0.254-0.115 0.325-0.222 0.139-0.21 0.168-0.499 0.13-0.795-0.011-0.088-0.081-0.197-0.157-0.271zM14 14.75c0 0.136-0.114 0.25-0.25 0.25h-11.5c-0.135 0-0.25-0.114-0.25-0.25v-13.5c0-0.135 0.115-0.25 0.25-0.25h7.5c0.075 0 0.16 0.010 0.25 0.027v3.973h3.973c0.017 0.090 0.027 0.174 0.027 0.25v9.5z"/>
+                  </svg>
+                </span>
+                <span class="downloadList-name">
+                  <a href="#">2025 Full Year Results Presentation</a>
+                </span>
+                <span class="downloadList-date">Feb 25, 2026</span>
+                <div class="downloadList-action">
+                  <a href="#" aria-label="Download 2025 Results Presentation">
+                    <svg class="flicon-download-alt" viewBox="0 0 48 48" width="16" height="16">
+                      <path fill="none" stroke="currentColor" stroke-width="3" d="M44 36v5c0 2.8-2.2 5-5 5H9c-2.8 0-5-2.2-5-5v-5M24 36V4M36 24L24 36 12 24"/>
+                    </svg>
+                  </a>
+                </div>
+              </li>
+
+              <li class="downloadList-item">
+                <span class="downloadList-icon">
+                  <svg class="flicon-pdf" viewBox="0 0 16 16" width="16" height="16">
+                    <path fill="currentColor" d="M13.156 9.211c-0.213-0.21-0.686-0.321-1.406-0.331-0.487-0.005-1.073 0.038-1.69 0.124-0.276-0.159-0.561-0.333-0.784-0.542-0.601-0.561-1.103-1.34-1.415-2.197 0.020-0.080 0.038-0.15 0.054-0.222 0 0 0.339-1.923 0.249-2.573-0.012-0.089-0.020-0.115-0.044-0.184l-0.029-0.076c-0.092-0.212-0.273-0.437-0.556-0.425l-0.171-0.005c-0.316 0-0.573 0.161-0.64 0.403-0.205 0.757 0.007 1.889 0.39 3.355l-0.098 0.239c-0.275 0.67-0.619 1.345-0.923 1.94l-0.040 0.077c-0.32 0.626-0.61 1.157-0.873 1.607l-0.271 0.144c-0.020 0.010-0.485 0.257-0.594 0.323-0.926 0.553-1.539 1.18-1.641 1.678-0.032 0.159-0.008 0.362 0.156 0.456l0.263 0.132c0.114 0.057 0.234 0.086 0.357 0.086 0.659 0 1.425-0.821 2.48-2.662 1.218-0.396 2.604-0.726 3.819-0.908 0.926 0.521 2.065 0.884 2.783 0.884 0.128 0 0.238-0.012 0.327-0.036 0.138-0.037 0.254-0.115 0.325-0.222 0.139-0.21 0.168-0.499 0.13-0.795-0.011-0.088-0.081-0.197-0.157-0.271zM14 14.75c0 0.136-0.114 0.25-0.25 0.25h-11.5c-0.135 0-0.25-0.114-0.25-0.25v-13.5c0-0.135 0.115-0.25 0.25-0.25h7.5c0.075 0 0.16 0.010 0.25 0.027v3.973h3.973c0.017 0.090 0.027 0.174 0.027 0.25v9.5z"/>
+                  </svg>
+                </span>
+                <span class="downloadList-name">
+                  <a href="#">4Q25 Appendix 4C &amp; Quarterly Activity Report</a>
+                </span>
+                <span class="downloadList-date">Feb 25, 2026</span>
+                <div class="downloadList-action">
+                  <a href="#" aria-label="Download 4Q25 Appendix 4C">
+                    <svg class="flicon-download-alt" viewBox="0 0 48 48" width="16" height="16">
+                      <path fill="none" stroke="currentColor" stroke-width="3" d="M44 36v5c0 2.8-2.2 5-5 5H9c-2.8 0-5-2.2-5-5v-5M24 36V4M36 24L24 36 12 24"/>
+                    </svg>
+                  </a>
+                </div>
+              </li>
+
+              <li class="downloadList-item">
+                <span class="downloadList-icon">
+                  <svg class="flicon-pdf" viewBox="0 0 16 16" width="16" height="16">
+                    <path fill="currentColor" d="M13.156 9.211c-0.213-0.21-0.686-0.321-1.406-0.331-0.487-0.005-1.073 0.038-1.69 0.124-0.276-0.159-0.561-0.333-0.784-0.542-0.601-0.561-1.103-1.34-1.415-2.197 0.020-0.080 0.038-0.15 0.054-0.222 0 0 0.339-1.923 0.249-2.573-0.012-0.089-0.020-0.115-0.044-0.184l-0.029-0.076c-0.092-0.212-0.273-0.437-0.556-0.425l-0.171-0.005c-0.316 0-0.573 0.161-0.64 0.403-0.205 0.757 0.007 1.889 0.39 3.355l-0.098 0.239c-0.275 0.67-0.619 1.345-0.923 1.94l-0.040 0.077c-0.32 0.626-0.61 1.157-0.873 1.607l-0.271 0.144c-0.020 0.010-0.485 0.257-0.594 0.323-0.926 0.553-1.539 1.18-1.641 1.678-0.032 0.159-0.008 0.362 0.156 0.456l0.263 0.132c0.114 0.057 0.234 0.086 0.357 0.086 0.659 0 1.425-0.821 2.48-2.662 1.218-0.396 2.604-0.726 3.819-0.908 0.926 0.521 2.065 0.884 2.783 0.884 0.128 0 0.238-0.012 0.327-0.036 0.138-0.037 0.254-0.115 0.325-0.222 0.139-0.21 0.168-0.499 0.13-0.795-0.011-0.088-0.081-0.197-0.157-0.271zM14 14.75c0 0.136-0.114 0.25-0.25 0.25h-11.5c-0.135 0-0.25-0.114-0.25-0.25v-13.5c0-0.135 0.115-0.25 0.25-0.25h7.5c0.075 0 0.16 0.010 0.25 0.027v3.973h3.973c0.017 0.090 0.027 0.174 0.027 0.25v9.5z"/>
+                  </svg>
+                </span>
+                <span class="downloadList-name">
+                  <a href="#">2024 Annual Report</a>
+                </span>
+                <span class="downloadList-date">Feb 20, 2025</span>
+                <div class="downloadList-action">
+                  <a href="#" aria-label="Download 2024 Annual Report">
+                    <svg class="flicon-download-alt" viewBox="0 0 48 48" width="16" height="16">
+                      <path fill="none" stroke="currentColor" stroke-width="3" d="M44 36v5c0 2.8-2.2 5-5 5H9c-2.8 0-5-2.2-5-5v-5M24 36V4M36 24L24 36 12 24"/>
+                    </svg>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- TAB PANE 3: SHAREHOLDER FAQ -->
+          <div id="ShareholderFAQ" class="investorMain-content content-faq">
+            <h2 class="investorMain-title">Shareholder FAQ</h2>
+
+            <article class="faq-item-block">
+              <h5 class="faq-item-question">How can I invest?</h5>
+              <p class="investorMain-content-desc">
+                You can buy Freelancer shares through a broker that supports shares on the Australian Securities Exchange (ASX). Freelancer's ticker is <strong>ASX: FLN</strong>. You should seek advice from a financial services professional before investing.
+              </p>
+              <p class="investorMain-content-desc callout-note">
+                <strong>Note:</strong> ASX has a rule called the Minimum Marketable Parcel (MMP). For any first-time purchase of a given ASX stock, you must buy a "marketable parcel" worth at least A$500 before brokerage fees.
+              </p>
+            </article>
+
+            <article class="faq-item-block">
+              <h5 class="faq-item-question">How do I find a stockbroker?</h5>
+              <p class="investorMain-content-desc">
+                A full list of Australian stockbrokers and other information about buying or selling shares can be found on the ASX website. Freelancer shares can generally only be purchased through an ASX registered broker, so if you are not a resident of Australia you may need to seek alternative arrangements. Interactive Brokers is an online broker that takes registrations from residents of many countries around the world that supports shares traded on the ASX.
+              </p>
+            </article>
+
+            <article class="faq-item-block">
+              <h5 class="faq-item-question">Do Freelancer.com users who are also Freelancer shareholders get any extra benefits?</h5>
+              <p class="investorMain-content-desc">
+                Yes! The Freelancer Foundation Shareholder Program offers shareholders of Freelancer Limited (ASX: FLN) certain benefits including reduced fees on a range of Freelancer services and exclusive support.
+              </p>
+            </article>
+
+            <article class="faq-item-block">
+              <h5 class="faq-item-question">Where can I find company announcements?</h5>
+              <p class="investorMain-content-desc">
+                You can find company announcements on the ASX company page for Freelancer Limited, or subscribe above to receive our announcements via email.
+              </p>
+            </article>
+
+            <article class="faq-item-block">
+              <h5 class="faq-item-question">When will Freelancer make company announcements that may affect my shares?</h5>
+              <p class="investorMain-content-desc">
+                Freelancer makes announcements in accordance with the continuous disclosure requirements of the ASX Listing Rules and Corporations Act. Key reporting dates (half year, full year, and AGM) are published in advance on the investor calendar.
+              </p>
+            </article>
+
+            <article class="faq-item-block">
+              <h5 class="faq-item-question">Where do I find historical share price information?</h5>
+              <p class="investorMain-content-desc">
+                Historical share price charts and market data can be accessed on the Australian Securities Exchange website (asx.com.au) under ticker FLN, or via financial data providers including Bloomberg, Reuters, Google Finance, and Yahoo Finance.
+              </p>
+            </article>
+
+            <article class="faq-item-block">
+              <h5 class="faq-item-question">How can I check my FLN holding?</h5>
+              <p class="investorMain-content-desc">
+                You can view and manage your shareholding online through our share registry, Boardroom Pty Limited, by registering for an InvestorServe account at <a href="https://www.investorserve.com.au" target="_blank" rel="noopener noreferrer">www.investorserve.com.au</a>.
+              </p>
+            </article>
+
+            <article class="faq-item-block">
+              <h5 class="faq-item-question">How do I update my shareholder information?</h5>
+              <p class="investorMain-content-desc">
+                Changes of address, bank account details, TFN/ABN notifications, and communication preferences can be completed online via Boardroom InvestorServe, or by submitting written forms directly to Boardroom Pty Limited.
+              </p>
+            </article>
+
+            <article class="faq-item-block">
+              <h5 class="faq-item-question">How do I find contact details for Freelancer's share registry?</h5>
+              <p class="investorMain-content-desc">
+                Boardroom Pty Limited contact details are located in the sidebar of this Investor Centre, or by calling 1300 737 760 (within Australia) or +61 2 9290 9600 (International).
+              </p>
+            </article>
+          </div>
+
+          <!-- TAB PANE 4: CORPORATE GOVERNANCE -->
+          <div id="CorporateGovernance" class="investorMain-content content-governance">
+            <h2 class="investorMain-title">Corporate Governance</h2>
+
+            <h5 class="downloadList-section-title">Charter Documents</h5>
+            <ul class="downloadList">
+              <li class="downloadList-item">
+                <span class="downloadList-icon">
+                  <svg class="flicon-pdf" viewBox="0 0 16 16" width="16" height="16">
+                    <path fill="currentColor" d="M13.156 9.211c-0.213-0.21-0.686-0.321-1.406-0.331-0.487-0.005-1.073 0.038-1.69 0.124-0.276-0.159-0.561-0.333-0.784-0.542-0.601-0.561-1.103-1.34-1.415-2.197 0.020-0.080 0.038-0.15 0.054-0.222 0 0 0.339-1.923 0.249-2.573-0.012-0.089-0.020-0.115-0.044-0.184l-0.029-0.076c-0.092-0.212-0.273-0.437-0.556-0.425l-0.171-0.005c-0.316 0-0.573 0.161-0.64 0.403-0.205 0.757 0.007 1.889 0.39 3.355l-0.098 0.239c-0.275 0.67-0.619 1.345-0.923 1.94l-0.040 0.077c-0.32 0.626-0.61 1.157-0.873 1.607l-0.271 0.144c-0.020 0.010-0.485 0.257-0.594 0.323-0.926 0.553-1.539 1.18-1.641 1.678-0.032 0.159-0.008 0.362 0.156 0.456l0.263 0.132c0.114 0.057 0.234 0.086 0.357 0.086 0.659 0 1.425-0.821 2.48-2.662 1.218-0.396 2.604-0.726 3.819-0.908 0.926 0.521 2.065 0.884 2.783 0.884 0.128 0 0.238-0.012 0.327-0.036 0.138-0.037 0.254-0.115 0.325-0.222 0.139-0.21 0.168-0.499 0.13-0.795-0.011-0.088-0.081-0.197-0.157-0.271zM14 14.75c0 0.136-0.114 0.25-0.25 0.25h-11.5c-0.135 0-0.25-0.114-0.25-0.25v-13.5c0-0.135 0.115-0.25 0.25-0.25h7.5c0.075 0 0.16 0.010 0.25 0.027v3.973h3.973c0.017 0.090 0.027 0.174 0.027 0.25v9.5z"/>
+                  </svg>
+                </span>
+                <span class="downloadList-name">
+                  <a href="#">Board Charter</a>
+                </span>
+                <span class="downloadList-date">Nov 15, 2023</span>
+                <div class="downloadList-action">
+                  <a href="#" aria-label="Download Board Charter">
+                    <svg class="flicon-download-alt" viewBox="0 0 48 48" width="16" height="16">
+                      <path fill="none" stroke="currentColor" stroke-width="3" d="M44 36v5c0 2.8-2.2 5-5 5H9c-2.8 0-5-2.2-5-5v-5M24 36V4M36 24L24 36 12 24"/>
+                    </svg>
+                  </a>
+                </div>
+              </li>
+
+              <li class="downloadList-item">
+                <span class="downloadList-icon">
+                  <svg class="flicon-pdf" viewBox="0 0 16 16" width="16" height="16">
+                    <path fill="currentColor" d="M13.156 9.211c-0.213-0.21-0.686-0.321-1.406-0.331-0.487-0.005-1.073 0.038-1.69 0.124-0.276-0.159-0.561-0.333-0.784-0.542-0.601-0.561-1.103-1.34-1.415-2.197 0.020-0.080 0.038-0.15 0.054-0.222 0 0 0.339-1.923 0.249-2.573-0.012-0.089-0.020-0.115-0.044-0.184l-0.029-0.076c-0.092-0.212-0.273-0.437-0.556-0.425l-0.171-0.005c-0.316 0-0.573 0.161-0.64 0.403-0.205 0.757 0.007 1.889 0.39 3.355l-0.098 0.239c-0.275 0.67-0.619 1.345-0.923 1.94l-0.040 0.077c-0.32 0.626-0.61 1.157-0.873 1.607l-0.271 0.144c-0.020 0.010-0.485 0.257-0.594 0.323-0.926 0.553-1.539 1.18-1.641 1.678-0.032 0.159-0.008 0.362 0.156 0.456l0.263 0.132c0.114 0.057 0.234 0.086 0.357 0.086 0.659 0 1.425-0.821 2.48-2.662 1.218-0.396 2.604-0.726 3.819-0.908 0.926 0.521 2.065 0.884 2.783 0.884 0.128 0 0.238-0.012 0.327-0.036 0.138-0.037 0.254-0.115 0.325-0.222 0.139-0.21 0.168-0.499 0.13-0.795-0.011-0.088-0.081-0.197-0.157-0.271zM14 14.75c0 0.136-0.114 0.25-0.25 0.25h-11.5c-0.135 0-0.25-0.114-0.25-0.25v-13.5c0-0.135 0.115-0.25 0.25-0.25h7.5c0.075 0 0.16 0.010 0.25 0.027v3.973h3.973c0.017 0.090 0.027 0.174 0.027 0.25v9.5z"/>
+                  </svg>
+                </span>
+                <span class="downloadList-name">
+                  <a href="#">Audit and Risk Committee Charter</a>
+                </span>
+                <span class="downloadList-date">Nov 15, 2023</span>
+                <div class="downloadList-action">
+                  <a href="#" aria-label="Download Audit Committee Charter">
+                    <svg class="flicon-download-alt" viewBox="0 0 48 48" width="16" height="16">
+                      <path fill="none" stroke="currentColor" stroke-width="3" d="M44 36v5c0 2.8-2.2 5-5 5H9c-2.8 0-5-2.2-5-5v-5M24 36V4M36 24L24 36 12 24"/>
+                    </svg>
+                  </a>
+                </div>
+              </li>
+
+              <li class="downloadList-item">
+                <span class="downloadList-icon">
+                  <svg class="flicon-pdf" viewBox="0 0 16 16" width="16" height="16">
+                    <path fill="currentColor" d="M13.156 9.211c-0.213-0.21-0.686-0.321-1.406-0.331-0.487-0.005-1.073 0.038-1.69 0.124-0.276-0.159-0.561-0.333-0.784-0.542-0.601-0.561-1.103-1.34-1.415-2.197 0.020-0.080 0.038-0.15 0.054-0.222 0 0 0.339-1.923 0.249-2.573-0.012-0.089-0.020-0.115-0.044-0.184l-0.029-0.076c-0.092-0.212-0.273-0.437-0.556-0.425l-0.171-0.005c-0.316 0-0.573 0.161-0.64 0.403-0.205 0.757 0.007 1.889 0.39 3.355l-0.098 0.239c-0.275 0.67-0.619 1.345-0.923 1.94l-0.040 0.077c-0.32 0.626-0.61 1.157-0.873 1.607l-0.271 0.144c-0.020 0.010-0.485 0.257-0.594 0.323-0.926 0.553-1.539 1.18-1.641 1.678-0.032 0.159-0.008 0.362 0.156 0.456l0.263 0.132c0.114 0.057 0.234 0.086 0.357 0.086 0.659 0 1.425-0.821 2.48-2.662 1.218-0.396 2.604-0.726 3.819-0.908 0.926 0.521 2.065 0.884 2.783 0.884 0.128 0 0.238-0.012 0.327-0.036 0.138-0.037 0.254-0.115 0.325-0.222 0.139-0.21 0.168-0.499 0.13-0.795-0.011-0.088-0.081-0.197-0.157-0.271zM14 14.75c0 0.136-0.114 0.25-0.25 0.25h-11.5c-0.135 0-0.25-0.114-0.25-0.25v-13.5c0-0.135 0.115-0.25 0.25-0.25h7.5c0.075 0 0.16 0.010 0.25 0.027v3.973h3.973c0.017 0.090 0.027 0.174 0.027 0.25v9.5z"/>
+                  </svg>
+                </span>
+                <span class="downloadList-name">
+                  <a href="#">Nomination and Remuneration Committee Charter</a>
+                </span>
+                <span class="downloadList-date">Nov 15, 2023</span>
+                <div class="downloadList-action">
+                  <a href="#" aria-label="Download Nomination Committee Charter">
+                    <svg class="flicon-download-alt" viewBox="0 0 48 48" width="16" height="16">
+                      <path fill="none" stroke="currentColor" stroke-width="3" d="M44 36v5c0 2.8-2.2 5-5 5H9c-2.8 0-5-2.2-5-5v-5M24 36V4M36 24L24 36 12 24"/>
+                    </svg>
+                  </a>
+                </div>
+              </li>
+            </ul>
+
+            <h5 class="downloadList-section-title">Policy Documents</h5>
+            <ul class="downloadList">
+              <li class="downloadList-item">
+                <span class="downloadList-icon">
+                  <svg class="flicon-pdf" viewBox="0 0 16 16" width="16" height="16">
+                    <path fill="currentColor" d="M13.156 9.211c-0.213-0.21-0.686-0.321-1.406-0.331-0.487-0.005-1.073 0.038-1.69 0.124-0.276-0.159-0.561-0.333-0.784-0.542-0.601-0.561-1.103-1.34-1.415-2.197 0.020-0.080 0.038-0.15 0.054-0.222 0 0 0.339-1.923 0.249-2.573-0.012-0.089-0.020-0.115-0.044-0.184l-0.029-0.076c-0.092-0.212-0.273-0.437-0.556-0.425l-0.171-0.005c-0.316 0-0.573 0.161-0.64 0.403-0.205 0.757 0.007 1.889 0.39 3.355l-0.098 0.239c-0.275 0.67-0.619 1.345-0.923 1.94l-0.040 0.077c-0.32 0.626-0.61 1.157-0.873 1.607l-0.271 0.144c-0.020 0.010-0.485 0.257-0.594 0.323-0.926 0.553-1.539 1.18-1.641 1.678-0.032 0.159-0.008 0.362 0.156 0.456l0.263 0.132c0.114 0.057 0.234 0.086 0.357 0.086 0.659 0 1.425-0.821 2.48-2.662 1.218-0.396 2.604-0.726 3.819-0.908 0.926 0.521 2.065 0.884 2.783 0.884 0.128 0 0.238-0.012 0.327-0.036 0.138-0.037 0.254-0.115 0.325-0.222 0.139-0.21 0.168-0.499 0.13-0.795-0.011-0.088-0.081-0.197-0.157-0.271zM14 14.75c0 0.136-0.114 0.25-0.25 0.25h-11.5c-0.135 0-0.25-0.114-0.25-0.25v-13.5c0-0.135 0.115-0.25 0.25-0.25h7.5c0.075 0 0.16 0.010 0.25 0.027v3.973h3.973c0.017 0.090 0.027 0.174 0.027 0.25v9.5z"/>
+                  </svg>
+                </span>
+                <span class="downloadList-name">
+                  <a href="#">Continuous Disclosure Policy</a>
+                </span>
+                <span class="downloadList-date">Nov 15, 2023</span>
+                <div class="downloadList-action">
+                  <a href="#" aria-label="Download Continuous Disclosure Policy">
+                    <svg class="flicon-download-alt" viewBox="0 0 48 48" width="16" height="16">
+                      <path fill="none" stroke="currentColor" stroke-width="3" d="M44 36v5c0 2.8-2.2 5-5 5H9c-2.8 0-5-2.2-5-5v-5M24 36V4M36 24L24 36 12 24"/>
+                    </svg>
+                  </a>
+                </div>
+              </li>
+
+              <li class="downloadList-item">
+                <span class="downloadList-icon">
+                  <svg class="flicon-pdf" viewBox="0 0 16 16" width="16" height="16">
+                    <path fill="currentColor" d="M13.156 9.211c-0.213-0.21-0.686-0.321-1.406-0.331-0.487-0.005-1.073 0.038-1.69 0.124-0.276-0.159-0.561-0.333-0.784-0.542-0.601-0.561-1.103-1.34-1.415-2.197 0.020-0.080 0.038-0.15 0.054-0.222 0 0 0.339-1.923 0.249-2.573-0.012-0.089-0.020-0.115-0.044-0.184l-0.029-0.076c-0.092-0.212-0.273-0.437-0.556-0.425l-0.171-0.005c-0.316 0-0.573 0.161-0.64 0.403-0.205 0.757 0.007 1.889 0.39 3.355l-0.098 0.239c-0.275 0.67-0.619 1.345-0.923 1.94l-0.040 0.077c-0.32 0.626-0.61 1.157-0.873 1.607l-0.271 0.144c-0.020 0.010-0.485 0.257-0.594 0.323-0.926 0.553-1.539 1.18-1.641 1.678-0.032 0.159-0.008 0.362 0.156 0.456l0.263 0.132c0.114 0.057 0.234 0.086 0.357 0.086 0.659 0 1.425-0.821 2.48-2.662 1.218-0.396 2.604-0.726 3.819-0.908 0.926 0.521 2.065 0.884 2.783 0.884 0.128 0 0.238-0.012 0.327-0.036 0.138-0.037 0.254-0.115 0.325-0.222 0.139-0.21 0.168-0.499 0.13-0.795-0.011-0.088-0.081-0.197-0.157-0.271zM14 14.75c0 0.136-0.114 0.25-0.25 0.25h-11.5c-0.135 0-0.25-0.114-0.25-0.25v-13.5c0-0.135 0.115-0.25 0.25-0.25h7.5c0.075 0 0.16 0.010 0.25 0.027v3.973h3.973c0.017 0.090 0.027 0.174 0.027 0.25v9.5z"/>
+                  </svg>
+                </span>
+                <span class="downloadList-name">
+                  <a href="#">Securities Trading Policy</a>
+                </span>
+                <span class="downloadList-date">Nov 15, 2023</span>
+                <div class="downloadList-action">
+                  <a href="#" aria-label="Download Securities Trading Policy">
+                    <svg class="flicon-download-alt" viewBox="0 0 48 48" width="16" height="16">
+                      <path fill="none" stroke="currentColor" stroke-width="3" d="M44 36v5c0 2.8-2.2 5-5 5H9c-2.8 0-5-2.2-5-5v-5M24 36V4M36 24L24 36 12 24"/>
+                    </svg>
+                  </a>
+                </div>
+              </li>
+
+              <li class="downloadList-item">
+                <span class="downloadList-icon">
+                  <svg class="flicon-pdf" viewBox="0 0 16 16" width="16" height="16">
+                    <path fill="currentColor" d="M13.156 9.211c-0.213-0.21-0.686-0.321-1.406-0.331-0.487-0.005-1.073 0.038-1.69 0.124-0.276-0.159-0.561-0.333-0.784-0.542-0.601-0.561-1.103-1.34-1.415-2.197 0.020-0.080 0.038-0.15 0.054-0.222 0 0 0.339-1.923 0.249-2.573-0.012-0.089-0.020-0.115-0.044-0.184l-0.029-0.076c-0.092-0.212-0.273-0.437-0.556-0.425l-0.171-0.005c-0.316 0-0.573 0.161-0.64 0.403-0.205 0.757 0.007 1.889 0.39 3.355l-0.098 0.239c-0.275 0.67-0.619 1.345-0.923 1.94l-0.040 0.077c-0.32 0.626-0.61 1.157-0.873 1.607l-0.271 0.144c-0.020 0.010-0.485 0.257-0.594 0.323-0.926 0.553-1.539 1.18-1.641 1.678-0.032 0.159-0.008 0.362 0.156 0.456l0.263 0.132c0.114 0.057 0.234 0.086 0.357 0.086 0.659 0 1.425-0.821 2.48-2.662 1.218-0.396 2.604-0.726 3.819-0.908 0.926 0.521 2.065 0.884 2.783 0.884 0.128 0 0.238-0.012 0.327-0.036 0.138-0.037 0.254-0.115 0.325-0.222 0.139-0.21 0.168-0.499 0.13-0.795-0.011-0.088-0.081-0.197-0.157-0.271zM14 14.75c0 0.136-0.114 0.25-0.25 0.25h-11.5c-0.135 0-0.25-0.114-0.25-0.25v-13.5c0-0.135 0.115-0.25 0.25-0.25h7.5c0.075 0 0.16 0.010 0.25 0.027v3.973h3.973c0.017 0.090 0.027 0.174 0.027 0.25v9.5z"/>
+                  </svg>
+                </span>
+                <span class="downloadList-name">
+                  <a href="#">Code of Conduct</a>
+                </span>
+                <span class="downloadList-date">Nov 15, 2023</span>
+                <div class="downloadList-action">
+                  <a href="#" aria-label="Download Code of Conduct">
+                    <svg class="flicon-download-alt" viewBox="0 0 48 48" width="16" height="16">
+                      <path fill="none" stroke="currentColor" stroke-width="3" d="M44 36v5c0 2.8-2.2 5-5 5H9c-2.8 0-5-2.2-5-5v-5M24 36V4M36 24L24 36 12 24"/>
+                    </svg>
+                  </a>
+                </div>
+              </li>
+
+              <li class="downloadList-item">
+                <span class="downloadList-icon">
+                  <svg class="flicon-pdf" viewBox="0 0 16 16" width="16" height="16">
+                    <path fill="currentColor" d="M13.156 9.211c-0.213-0.21-0.686-0.321-1.406-0.331-0.487-0.005-1.073 0.038-1.69 0.124-0.276-0.159-0.561-0.333-0.784-0.542-0.601-0.561-1.103-1.34-1.415-2.197 0.020-0.080 0.038-0.15 0.054-0.222 0 0 0.339-1.923 0.249-2.573-0.012-0.089-0.020-0.115-0.044-0.184l-0.029-0.076c-0.092-0.212-0.273-0.437-0.556-0.425l-0.171-0.005c-0.316 0-0.573 0.161-0.64 0.403-0.205 0.757 0.007 1.889 0.39 3.355l-0.098 0.239c-0.275 0.67-0.619 1.345-0.923 1.94l-0.040 0.077c-0.32 0.626-0.61 1.157-0.873 1.607l-0.271 0.144c-0.020 0.010-0.485 0.257-0.594 0.323-0.926 0.553-1.539 1.18-1.641 1.678-0.032 0.159-0.008 0.362 0.156 0.456l0.263 0.132c0.114 0.057 0.234 0.086 0.357 0.086 0.659 0 1.425-0.821 2.48-2.662 1.218-0.396 2.604-0.726 3.819-0.908 0.926 0.521 2.065 0.884 2.783 0.884 0.128 0 0.238-0.012 0.327-0.036 0.138-0.037 0.254-0.115 0.325-0.222 0.139-0.21 0.168-0.499 0.13-0.795-0.011-0.088-0.081-0.197-0.157-0.271zM14 14.75c0 0.136-0.114 0.25-0.25 0.25h-11.5c-0.135 0-0.25-0.114-0.25-0.25v-13.5c0-0.135 0.115-0.25 0.25-0.25h7.5c0.075 0 0.16 0.010 0.25 0.027v3.973h3.973c0.017 0.090 0.027 0.174 0.027 0.25v9.5z"/>
+                  </svg>
+                </span>
+                <span class="downloadList-name">
+                  <a href="#">Diversity Policy</a>
+                </span>
+                <span class="downloadList-date">Nov 15, 2023</span>
+                <div class="downloadList-action">
+                  <a href="#" aria-label="Download Diversity Policy">
+                    <svg class="flicon-download-alt" viewBox="0 0 48 48" width="16" height="16">
+                      <path fill="none" stroke="currentColor" stroke-width="3" d="M44 36v5c0 2.8-2.2 5-5 5H9c-2.8 0-5-2.2-5-5v-5M24 36V4M36 24L24 36 12 24"/>
+                    </svg>
+                  </a>
+                </div>
+              </li>
+
+              <li class="downloadList-item">
+                <span class="downloadList-icon">
+                  <svg class="flicon-pdf" viewBox="0 0 16 16" width="16" height="16">
+                    <path fill="currentColor" d="M13.156 9.211c-0.213-0.21-0.686-0.321-1.406-0.331-0.487-0.005-1.073 0.038-1.69 0.124-0.276-0.159-0.561-0.333-0.784-0.542-0.601-0.561-1.103-1.34-1.415-2.197 0.020-0.080 0.038-0.15 0.054-0.222 0 0 0.339-1.923 0.249-2.573-0.012-0.089-0.020-0.115-0.044-0.184l-0.029-0.076c-0.092-0.212-0.273-0.437-0.556-0.425l-0.171-0.005c-0.316 0-0.573 0.161-0.64 0.403-0.205 0.757 0.007 1.889 0.39 3.355l-0.098 0.239c-0.275 0.67-0.619 1.345-0.923 1.94l-0.040 0.077c-0.32 0.626-0.61 1.157-0.873 1.607l-0.271 0.144c-0.020 0.010-0.485 0.257-0.594 0.323-0.926 0.553-1.539 1.18-1.641 1.678-0.032 0.159-0.008 0.362 0.156 0.456l0.263 0.132c0.114 0.057 0.234 0.086 0.357 0.086 0.659 0 1.425-0.821 2.48-2.662 1.218-0.396 2.604-0.726 3.819-0.908 0.926 0.521 2.065 0.884 2.783 0.884 0.128 0 0.238-0.012 0.327-0.036 0.138-0.037 0.254-0.115 0.325-0.222 0.139-0.21 0.168-0.499 0.13-0.795-0.011-0.088-0.081-0.197-0.157-0.271zM14 14.75c0 0.136-0.114 0.25-0.25 0.25h-11.5c-0.135 0-0.25-0.114-0.25-0.25v-13.5c0-0.135 0.115-0.25 0.25-0.25h7.5c0.075 0 0.16 0.010 0.25 0.027v3.973h3.973c0.017 0.090 0.027 0.174 0.027 0.25v9.5z"/>
+                  </svg>
+                </span>
+                <span class="downloadList-name">
+                  <a href="#">Whistleblower Policy</a>
+                </span>
+                <span class="downloadList-date">Nov 15, 2023</span>
+                <div class="downloadList-action">
+                  <a href="#" aria-label="Download Whistleblower Policy">
+                    <svg class="flicon-download-alt" viewBox="0 0 48 48" width="16" height="16">
+                      <path fill="none" stroke="currentColor" stroke-width="3" d="M44 36v5c0 2.8-2.2 5-5 5H9c-2.8 0-5-2.2-5-5v-5M24 36V4M36 24L24 36 12 24"/>
+                    </svg>
+                  </a>
+                </div>
+              </li>
+            </ul>
+
+            <h5 class="downloadList-section-title">Other Documents</h5>
+            <ul class="downloadList">
+              <li class="downloadList-item">
+                <span class="downloadList-icon">
+                  <svg class="flicon-pdf" viewBox="0 0 16 16" width="16" height="16">
+                    <path fill="currentColor" d="M13.156 9.211c-0.213-0.21-0.686-0.321-1.406-0.331-0.487-0.005-1.073 0.038-1.69 0.124-0.276-0.159-0.561-0.333-0.784-0.542-0.601-0.561-1.103-1.34-1.415-2.197 0.020-0.080 0.038-0.15 0.054-0.222 0 0 0.339-1.923 0.249-2.573-0.012-0.089-0.020-0.115-0.044-0.184l-0.029-0.076c-0.092-0.212-0.273-0.437-0.556-0.425l-0.171-0.005c-0.316 0-0.573 0.161-0.64 0.403-0.205 0.757 0.007 1.889 0.39 3.355l-0.098 0.239c-0.275 0.67-0.619 1.345-0.923 1.94l-0.040 0.077c-0.32 0.626-0.61 1.157-0.873 1.607l-0.271 0.144c-0.020 0.010-0.485 0.257-0.594 0.323-0.926 0.553-1.539 1.18-1.641 1.678-0.032 0.159-0.008 0.362 0.156 0.456l0.263 0.132c0.114 0.057 0.234 0.086 0.357 0.086 0.659 0 1.425-0.821 2.48-2.662 1.218-0.396 2.604-0.726 3.819-0.908 0.926 0.521 2.065 0.884 2.783 0.884 0.128 0 0.238-0.012 0.327-0.036 0.138-0.037 0.254-0.115 0.325-0.222 0.139-0.21 0.168-0.499 0.13-0.795-0.011-0.088-0.081-0.197-0.157-0.271zM14 14.75c0 0.136-0.114 0.25-0.25 0.25h-11.5c-0.135 0-0.25-0.114-0.25-0.25v-13.5c0-0.135 0.115-0.25 0.25-0.25h7.5c0.075 0 0.16 0.010 0.25 0.027v3.973h3.973c0.017 0.090 0.027 0.174 0.027 0.25v9.5z"/>
+                  </svg>
+                </span>
+                <span class="downloadList-name">
+                  <a href="#">Constitution of Freelancer Limited</a>
+                </span>
+                <span class="downloadList-date">Nov 15, 2023</span>
+                <div class="downloadList-action">
+                  <a href="#" aria-label="Download Constitution">
+                    <svg class="flicon-download-alt" viewBox="0 0 48 48" width="16" height="16">
+                      <path fill="none" stroke="currentColor" stroke-width="3" d="M44 36v5c0 2.8-2.2 5-5 5H9c-2.8 0-5-2.2-5-5v-5M24 36V4M36 24L24 36 12 24"/>
+                    </svg>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- TAB PANE 5: FOUNDATION SHAREHOLDER PROGRAM -->
+          <div id="FoundationShareholderProgram" class="investorMain-content content-foundation">
+            <h2 class="investorMain-title">The Freelancer Foundation Shareholder Program</h2>
+            <p class="investorMain-intro">
+              The Freelancer Foundation Shareholder Program offers shareholders of Freelancer Limited (ASX: FLN)(OTCQX: FRLCY) certain benefits including reduced fees on a range of Freelancer services.
+            </p>
+
+            <figure class="shareholder-figure">
+              <img src="image/imgi_3_freelancer-shareholder-with-badge-black.svg" alt="Freelancer Shareholder Badge Graphic" class="shareholder-badge-img" width="380" height="auto">
+            </figure>
+
+            <h4 class="subheading-h4">Benefits at a Glance</h4>
+            
+            <div class="benefit-item">
+              <strong class="benefit-title">Fee Rebates on Freelancer.com</strong>
+              <p class="investorMain-content-desc">
+                A rebate of 5% of project and contest commissions will be credited to your Freelancer.com account, calculated monthly, for each full calendar month that you remain eligible in the program.
+              </p>
+            </div>
+
+            <div class="benefit-item">
+              <strong class="benefit-title">Priority Customer Support</strong>
+              <p class="investorMain-content-desc">
+                You get priority customer support from our 24x7x365 multilingual support team.
+              </p>
+            </div>
+
+            <div class="benefit-item">
+              <strong class="benefit-title">Freelancer Foundation Shareholder Badge</strong>
+              <p class="investorMain-content-desc">
+                A unique badge will appear on your Freelancer.com and WarriorForum profiles, signifying you are a shareholder of the company.
+              </p>
+            </div>
+
+            <h4 class="subheading-h4">Access Your Benefits</h4>
+            <p class="investorMain-content-desc">
+              These benefits are available to individuals with a minimum of 5,000 ordinary fully paid Freelancer Limited shares. Simply click the button below and fill out the application form to start accessing your benefits.
+            </p>
+
+            <div class="investorMain-action">
+              <a href="#shareholder-modal" class="btn btn-xlarge btn-info">Apply for Benefits</a>
+            </div>
+
+            <h4 class="subheading-h4">Where to Purchase Shares</h4>
+            <p class="investorMain-content-desc">
+              The ticker symbol for Freelancer is <strong>ASX: FLN</strong> for anyone purchasing shares from Australia.
+            </p>
+            <p class="investorMain-content-desc callout-note">
+              <strong>Note:</strong> Under ASX rules called 'Minimum Marketable Parcel' (MMP), your first purchase of FLN (or any ASX-listed company) must be at least A$500 worth of shares (excluding brokerage fees), regardless of which broker you use.
+            </p>
+
+            <h4 class="subheading-h4">Terms and Conditions</h4>
+            <p class="investorMain-content-desc">To be eligible for the Freelancer Foundation Shareholder Program, you must meet the following:</p>
+            <ul class="investorMain-terms-list">
+              <li>
+                A shareholder must be a validly registered user of either the Freelancer.com or the Warrior Forum website (Freelancer User). Suspended accounts will not be eligible. Freelancer Users who breach the Terms of Use of either website may have their Program membership suspended or cancelled, at the discretion of Freelancer Limited.
+              </li>
+              <li>
+                A shareholder must be a natural person(s) and:
+                <ul class="sub-terms-list">
+                  <li>owns 5,000 ordinary fully paid Freelancer Limited shares; or</li>
+                  <li>is nominated by a company, trust or incorporated body that owns 5,000 ordinary fully paid Freelancer Limited shares. A company, trust or incorporated body can nominate one natural person to receive the full benefits of the package.</li>
+                </ul>
+              </li>
+              <li>
+                Shareholders must provide proof of share ownership via a holding statement or certified statement from their broker.
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         4. PURE CSS APPLICATION MODAL (#shareholder-modal)
+         ======================================================================== -->
+    <aside id="shareholder-modal" class="shareholder-modal">
+      <div class="modal-backdrop-wrap">
+        <a href="#FoundationShareholderProgram" class="modal-backdrop" aria-label="Close modal"></a>
+        <div class="modal-dialog">
+          <a href="#FoundationShareholderProgram" class="modal-close" aria-label="Close form">&times;</a>
+          
+          <div class="modal-header">
+            <h3 class="modal-title">Application Form - Foundation Shareholder Program</h3>
+            <p class="modal-subtitle">Claim your shareholder benefits on Freelancer.com</p>
+          </div>
+
+          <form class="fl-form shareholder-form" action="#FoundationShareholderProgram">
+            <div class="form-row">
+              <div class="form-col">
+                <label class="form-label" for="full-name">Full Legal Name <span class="req">*</span></label>
+                <input type="text" id="full-name" class="form-control" placeholder="Full Name as per Share Registry" required>
+              </div>
+              <div class="form-col">
+                <label class="form-label" for="fl-username">Freelancer.com Username <span class="req">*</span></label>
+                <input type="text" id="fl-username" class="form-control" placeholder="e.g. your_username" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-col">
+                <label class="form-label" for="email">Email Address <span class="req">*</span></label>
+                <input type="email" id="email" class="form-control" placeholder="Registered Email" required>
+              </div>
+              <div class="form-col">
+                <label class="form-label" for="phone">Phone Number</label>
+                <input type="tel" id="phone" class="form-control" placeholder="+61 400 000 000">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-col">
+                <label class="form-label" for="srn-hin">SRN / HIN / Holder Number <span class="req">*</span></label>
+                <input type="text" id="srn-hin" class="form-control" placeholder="Securityholder Reference Number" required>
+              </div>
+              <div class="form-col">
+                <label class="form-label" for="shares-held">Number of Shares (min 5,000) <span class="req">*</span></label>
+                <input type="number" id="shares-held" class="form-control" placeholder="5000" min="5000" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-col full-col">
+                <label class="form-label">Proof of Shareholding (Holding Statement / CHESS Statement) <span class="req">*</span></label>
+                <div class="file-drop-box">
+                  <label for="statement-file" class="file-label">
+                    <span class="file-icon">+</span>
+                    <span>Upload Document (.pdf, .jpg, .png)</span>
+                    <input type="file" id="statement-file" class="file-input" accept=".pdf,.png,.jpg,.jpeg">
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal-footer">
+              <button type="submit" class="btn btn-xlarge btn-info btn-submit">Submit Application</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </aside>
+
+  </main>
+
+  <!-- ========================================================================
+       5. FULL FREELANCER 5-COLUMN FOOTER
+       ======================================================================== -->
+  <footer class="FooterNew">
+    <div class="FooterNew-content">
+      <div class="container">
+        
+        <!-- Top Links Grid -->
+        <div class="footer-grid">
+
+          <!-- Column 1: Brand & Locales -->
+          <div class="footer-col footer-col-brand">
+            <a href="#" class="FooterNew-logo" aria-label="Freelancer Logo">
+              <img class="FooterNew-logo-img" src="image/imgi_4_Freelancer-footer-logo-522454d7.svg" alt="Freelancer Logo" width="62" height="40" loading="lazy">
+            </a>
+
+            <div class="footer-locale-item">
+              <a href="#" class="FooterNew-subTitle">
+                <span class="FooterNew-subTitle-icon">
+                  <img src="image/download (11).svg" alt="Language" class="footer-svg-icon" width="20" height="20">
+                </span>
+                English - US (International)
+              </a>
+            </div>
+
+            <div class="footer-locale-item">
+              <a href="#" class="FooterNew-subTitle">
+                <span class="FooterNew-subTitle-icon">
+                  <img src="image/download (10).svg" alt="Help &amp; Support" class="footer-svg-icon" width="20" height="20">
+                </span>
+                Help &amp; Support
+              </a>
+            </div>
+
+            <div class="footer-locale-item">
+              <div class="FooterNew-subTitle FooterNew-accessibility">
+                <span class="FooterNew-subTitle-icon">
+                  <img src="image/download (9).svg" alt="Accessibility" class="footer-svg-icon" width="20" height="20">
+                </span>
+                Accessibility
+              </div>
+            </div>
+          </div>
+
+          <!-- Column 2: Freelancer -->
+          <div class="footer-col footer-col-links">
+            <h5 class="FooterNew-link-title">Freelancer</h5>
+            <ul class="FooterNew-links">
+              <li><a class="FooterNew-link" href="#">Categories</a></li>
+              <li><a class="FooterNew-link" href="#">Projects</a></li>
+              <li><a class="FooterNew-link" href="#">Contests</a></li>
+              <li><a class="FooterNew-link" href="#">Freelancers</a></li>
+              <li><a class="FooterNew-link" href="#">Enterprise</a></li>
+              <li><a class="FooterNew-link" href="#">Membership</a></li>
+              <li><a class="FooterNew-link" href="/preferred freelancer program/index.html">Preferred Freelancer Program</a></li>
+              <li><a class="FooterNew-link" href="#">Project Management</a></li>
+              <li><a class="FooterNew-link" href="#">Local Jobs</a></li>
+              <li><a class="FooterNew-link" href="#">Photo Anywhere</a></li>
+              <li><a class="FooterNew-link" href="#">Showcase</a></li>
+              <li><a class="FooterNew-link" href="#">API for Developers</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 3: About -->
+          <div class="footer-col footer-col-links">
+            <h5 class="FooterNew-link-title">About</h5>
+            <ul class="FooterNew-links">
+              <li><a class="FooterNew-link" href="#">About us</a></li>
+              <li><a class="FooterNew-link" href="#">How it Works</a></li>
+              <li><a class="FooterNew-link" href="#">Security</a></li>
+              <li><a class="FooterNew-link active-link" href="#">Investor</a></li>
+              <li><a class="FooterNew-link" href="#">Sitemap</a></li>
+              <li><a class="FooterNew-link" href="#">Stories</a></li>
+              <li><a class="FooterNew-link" href="#">News</a></li>
+              <li><a class="FooterNew-link" href="#">Team</a></li>
+              <li><a class="FooterNew-link" href="#">Awards</a></li>
+              <li><a class="FooterNew-link" href="#">Press Releases</a></li>
+              <li><a class="FooterNew-link" href="/career/index.html">Careers</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 4: Terms -->
+          <div class="footer-col footer-col-links">
+            <h5 class="FooterNew-link-title">Terms</h5>
+            <ul class="FooterNew-links">
+              <li><a class="FooterNew-link" href="#">Privacy Policy</a></li>
+              <li><a class="FooterNew-link" href="#">Terms and Conditions</a></li>
+              <li><a class="FooterNew-link" href="#">Copyright Policy</a></li>
+              <li><a class="FooterNew-link" href="#">Code of Conduct</a></li>
+              <li><a class="FooterNew-link" href="#">Fees and Charges</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 5: Apps & Social -->
+          <div class="footer-col footer-col-apps">
+            <h5 class="FooterNew-link-title">Apps</h5>
+            <div class="FooterNew-appStoreIcons">
+              <a href="#" class="FooterNew-appStoreIcon" title="Download on the App Store">
+                <img class="FooterNew-appStoreIcon-image" src="image/imgi_5_app-store-1f36bbd8.svg" alt="Apple App Store Badge" width="140" height="42" loading="lazy">
+              </a>
+              <a href="#" class="FooterNew-appStoreIcon" title="Get it on Google Play">
+                <img class="FooterNew-appStoreIcon-image" src="image/imgi_6_google-play-66442243.svg" alt="Google Play Store Badge" width="140" height="42" loading="lazy">
+              </a>
+            </div>
+
+            <div class="FooterNew-social">
+              <a class="FooterNew-social-icon" href="#" title="Freelancer on Facebook" aria-label="Facebook">
+                <img src="image/download (7).svg" alt="Facebook" width="20" height="20">
+              </a>
+              <a class="FooterNew-social-icon" href="#" title="Freelancer on Twitter" aria-label="Twitter">
+                <img src="image/download (6).svg" alt="Twitter" width="20" height="20">
+              </a>
+              <a class="FooterNew-social-icon" href="#" title="Freelancer on YouTube" aria-label="YouTube">
+                <img src="image/download (5).svg" alt="YouTube" width="20" height="20">
+              </a>
+              <a class="FooterNew-social-icon" href="#" title="Freelancer on Instagram" aria-label="Instagram">
+                <img src="image/download (4).svg" alt="Instagram" width="20" height="20">
+              </a>
+              <a class="FooterNew-social-icon" href="#" title="Latest Projects RSS" aria-label="RSS">
+                <img src="image/download (3).svg" alt="RSS" width="20" height="20">
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Footer Bottom Statistics & Legal -->
+        <div class="FooterNew-section footer-bottom-stats">
+          <div class="stats-row">
+            <div class="stat-col">
+              <div class="SiteStat-value">80,429,183</div>
+              <div class="SiteStat-name">
+                <span class="SiteStat-name-text">Registered Users</span>
+              </div>
+            </div>
+
+            <div class="stat-col">
+              <div class="SiteStat-value">24,710,952</div>
+              <div class="SiteStat-name">
+                <span class="SiteStat-name-text">Total Jobs Posted</span>
+              </div>
+            </div>
+
+            <div class="stat-col legal-col">
+              <p class="FooterNew-siteStat-term">
+                Freelancer &reg; is a registered Trademark of Freelancer Technology Pty Limited (ACN 142 189 759)
+              </p>
+              <p class="FooterNew-siteStat-term">
+                Copyright &copy; 2026 Freelancer Technology Pty Limited (ACN 142 189 759)
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

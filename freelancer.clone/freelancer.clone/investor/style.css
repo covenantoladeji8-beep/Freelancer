@@ -1,0 +1,1353 @@
+/* ==========================================================================
+   FREELANCER INVESTOR PAGE - REPLICA STYLESHEET
+   Pure CSS3 - High-Fidelity, Zero-JS
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. VARIABLES & RESET
+   -------------------------------------------------------------------------- */
+:root {
+  --color-brand-blue:   #007fed;
+  --color-accent-blue:  #139ff0;
+  --color-hover-blue:   #29b2fe;
+  --color-post-pink:    #ff2272;
+
+  --color-navy-dark:    #161e2c;
+  --color-text-dark:    #0e1724;
+  --color-text-body:    #4d525b;
+  --color-text-muted:   #64748b;
+  --color-text-white:   #ffffff;
+
+  --color-border:       #eeeeee;
+  --color-border-mid:   #dedede;
+  --color-bg-light:     #f3f5f8;
+  --color-bg-white:     #ffffff;
+
+  --font-family: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI",
+                 "Helvetica Neue", Arial, sans-serif;
+
+  --container-max:      960px;
+  --container-wide:     1176px;
+  --header-height:      64px;
+  --radius-sm:          3px;
+  --radius-md:          4px;
+  --transition:         all 0.2s ease-in-out;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: 14px;
+  line-height: 1.43;
+  color: var(--color-text-dark);
+  background-color: var(--color-bg-white);
+}
+
+a {
+  color: var(--color-brand-blue);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-hover-blue);
+  text-decoration: none;
+}
+
+ul, ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+}
+
+/* --------------------------------------------------------------------------
+   2. UTILITIES
+   -------------------------------------------------------------------------- */
+.container {
+  width: var(--container-max);
+  min-width: var(--container-max);
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* --------------------------------------------------------------------------
+   3. GLOBAL HEADER / NAVBAR
+   -------------------------------------------------------------------------- */
+.fl-header {
+  background-color: var(--color-navy-dark);
+  height: var(--header-height);
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  max-width: var(--container-wide);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.logo-img {
+  height: 34px;
+  width: auto;
+  display: block;
+}
+
+.primary-nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  list-style: none;
+}
+
+.nav-link {
+  color: rgba(255,255,255,0.85);
+  font-size: 14px;
+  font-weight: 400;
+  padding: 8px 12px;
+  border-radius: var(--radius-sm);
+  transition: var(--transition);
+  white-space: nowrap;
+}
+
+.nav-link:hover {
+  color: #fff;
+  background-color: rgba(255,255,255,0.08);
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.auth-link {
+  color: rgba(255,255,255,0.85);
+  font-size: 14px;
+  font-weight: 400;
+  padding: 7px 14px;
+  border-radius: var(--radius-sm);
+  transition: var(--transition);
+}
+
+.auth-link:hover {
+  color: #fff;
+  background-color: rgba(255,255,255,0.08);
+}
+
+.btn-post-project {
+  display: inline-flex;
+  align-items: center;
+  background-color: var(--color-post-pink);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 8px 18px;
+  border-radius: var(--radius-sm);
+  transition: var(--transition);
+  white-space: nowrap;
+}
+
+.btn-post-project:hover {
+  background-color: #f51263;
+  color: #fff;
+}
+
+.sub-navbar-compat {
+  height: 0;
+  background: transparent;
+}
+
+/* --------------------------------------------------------------------------
+   4. HERO BANNER (masterBanner)
+   -------------------------------------------------------------------------- */
+.masterBanner-section {
+  position: relative;
+  color: #fff;
+  height: 460px;
+  min-height: 460px;
+  background-color: var(--color-text-dark);
+}
+
+.masterBanner-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("image/investor-banner-3b8fe8e8.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.58;
+}
+
+.masterBanner-inner {
+  width: var(--container-max);
+  min-width: var(--container-max);
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: table;
+  height: 460px;
+  position: relative;
+  z-index: 1;
+}
+
+.masterBanner-content {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.masterBanner-title {
+  font-size: 41px;
+  line-height: 1.17;
+  font-weight: 700;
+  margin: 0 auto;
+  max-width: 70%;
+}
+
+.masterBanner-byline {
+  font-size: 24px;
+  line-height: 1.33;
+  margin: 0 auto 24px;
+  max-width: 70%;
+}
+
+.masterBanner-cta {
+  margin: 40px auto 0;
+  max-width: 48%;
+}
+
+/* --------------------------------------------------------------------------
+   5. EMAIL SUBSCRIBE COMBO
+   -------------------------------------------------------------------------- */
+.investor-subscribe-form {
+  width: 100%;
+}
+
+.input-btn-combo {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  width: 100%;
+}
+
+.xlarge-input {
+  flex: 1 1 auto;
+  height: 56px;
+  border: none;
+  border-radius: var(--radius-sm) 0 0 var(--radius-sm);
+  padding: 0 16px;
+  font-size: 16px;
+  font-family: var(--font-family);
+  color: var(--color-text-dark);
+  background-color: #fff;
+  outline: none;
+  min-width: 0;
+}
+
+.xlarge-input::placeholder {
+  color: #aaa;
+}
+
+/* --------------------------------------------------------------------------
+   6. BUTTONS
+   -------------------------------------------------------------------------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-family);
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  border-radius: var(--radius-sm);
+  padding: 8px 18px;
+  transition: var(--transition);
+  text-decoration: none;
+  white-space: nowrap;
+  line-height: 1;
+}
+
+.btn-xlarge {
+  padding: 0 24px;
+  height: 56px;
+  font-size: 16px;
+}
+
+.btn-info {
+  background-color: var(--color-accent-blue);
+  color: #fff;
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+}
+
+.btn-info:hover {
+  background-color: var(--color-brand-blue);
+  color: #fff;
+}
+
+.btn-submit {
+  background-color: var(--color-accent-blue);
+  color: #fff;
+  border-radius: var(--radius-sm);
+  height: 44px;
+  font-size: 14px;
+  padding: 0 20px;
+}
+
+.btn-submit:hover {
+  background-color: var(--color-brand-blue);
+}
+
+/* --------------------------------------------------------------------------
+   7. RADIO TAB CONTROLLER (invisible)
+   -------------------------------------------------------------------------- */
+.tab-radio {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+}
+
+/* --------------------------------------------------------------------------
+   8. INVESTOR LAYOUT WRAPPER
+   -------------------------------------------------------------------------- */
+.site-section-inner {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  zoom: 1;
+}
+
+.site-section-inner::before,
+.site-section-inner::after {
+  content: "";
+  display: table;
+}
+
+.site-section-inner::after {
+  clear: both;
+}
+
+.investor-layout-grid {
+  zoom: 1;
+}
+
+.investor-layout-grid::before,
+.investor-layout-grid::after {
+  content: "";
+  display: table;
+}
+
+.investor-layout-grid::after {
+  clear: both;
+}
+
+/* LEFT SIDEBAR */
+.investorSidebar {
+  position: relative;
+  float: left;
+  width: 33.33333333%;
+  min-height: 1px;
+  padding-left: 0;
+  padding-right: 40px;
+}
+
+/* RIGHT MAIN CONTENT */
+.investorMain {
+  position: relative;
+  float: left;
+  width: 66.66666667%;
+  min-height: 1px;
+  padding-left: 40px;
+  padding-right: 0;
+}
+
+/* --------------------------------------------------------------------------
+   9. SIDEBAR NAV
+   -------------------------------------------------------------------------- */
+.sidebarNav-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sidebarNav-list-item {
+  display: block;
+}
+
+.sidebarNav-list-link {
+  display: block;
+  padding: 19px 24px;
+  font-size: 20px;
+  line-height: 1.4;
+  color: var(--color-text-dark);
+  cursor: pointer;
+  transition: var(--transition);
+  user-select: none;
+}
+
+.sidebarNav-list-link:hover {
+  color: var(--color-hover-blue);
+}
+
+/* Active tab states via radio siblings */
+#tab-shareholder:checked ~ .investor-layout-grid .nav-item-shareholder .sidebarNav-list-link,
+#tab-shareholder:checked ~ * .nav-item-shareholder .sidebarNav-list-link {
+  background-color: var(--color-accent-blue);
+  color: #fff;
+  font-weight: 500;
+}
+
+#tab-reports:checked ~ .investor-layout-grid .nav-item-reports .sidebarNav-list-link,
+#tab-reports:checked ~ * .nav-item-reports .sidebarNav-list-link {
+  background-color: var(--color-accent-blue);
+  color: #fff;
+  font-weight: 500;
+}
+
+#tab-faq:checked ~ .investor-layout-grid .nav-item-faq .sidebarNav-list-link,
+#tab-faq:checked ~ * .nav-item-faq .sidebarNav-list-link {
+  background-color: var(--color-accent-blue);
+  color: #fff;
+  font-weight: 500;
+}
+
+#tab-governance:checked ~ .investor-layout-grid .nav-item-governance .sidebarNav-list-link,
+#tab-governance:checked ~ * .nav-item-governance .sidebarNav-list-link {
+  background-color: var(--color-accent-blue);
+  color: #fff;
+  font-weight: 500;
+}
+
+#tab-foundation:checked ~ .investor-layout-grid .nav-item-foundation .sidebarNav-list-link,
+#tab-foundation:checked ~ * .nav-item-foundation .sidebarNav-list-link {
+  background-color: var(--color-accent-blue);
+  color: #fff;
+  font-weight: 500;
+}
+
+/* --------------------------------------------------------------------------
+   10. TAB CONTENT PANELS
+   -------------------------------------------------------------------------- */
+.investorMain-content {
+  display: none;
+}
+
+#tab-shareholder:checked ~ .investor-layout-grid .content-shareholder,
+#tab-shareholder:checked ~ * .content-shareholder { display: block; }
+
+#tab-reports:checked ~ .investor-layout-grid .content-reports,
+#tab-reports:checked ~ * .content-reports { display: block; }
+
+#tab-faq:checked ~ .investor-layout-grid .content-faq,
+#tab-faq:checked ~ * .content-faq { display: block; }
+
+#tab-governance:checked ~ .investor-layout-grid .content-governance,
+#tab-governance:checked ~ * .content-governance { display: block; }
+
+#tab-foundation:checked ~ .investor-layout-grid .content-foundation,
+#tab-foundation:checked ~ * .content-foundation { display: block; }
+
+/* --------------------------------------------------------------------------
+   11. INVESTOR MAIN CONTENT TYPOGRAPHY
+   -------------------------------------------------------------------------- */
+.investorMain-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--color-text-dark);
+  margin-bottom: 24px;
+}
+
+.investorMain-intro {
+  font-size: 14px;
+  line-height: 1.43;
+  color: var(--color-text-body);
+  margin-bottom: 24px;
+}
+
+.investorMain-content-desc {
+  font-size: 14px;
+  line-height: 1.43;
+  color: var(--color-text-body);
+  margin-bottom: 16px;
+}
+
+.investorMain-content-desc:last-child {
+  margin-bottom: 0;
+}
+
+.investorMain-content-list {
+  font-size: 14px;
+  line-height: 1.43;
+  list-style: none;
+  margin-bottom: 24px;
+  padding-left: 0;
+}
+
+.investorMain-content-list li {
+  padding: 4px 0;
+}
+
+.investorMain-action {
+  margin: 35px 0;
+}
+
+.info-block {
+  margin-bottom: 28px;
+}
+
+.info-heading {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.43;
+  color: var(--color-text-dark);
+  margin-bottom: 8px;
+}
+
+.callout-note {
+  border-left: 3px solid var(--color-accent-blue);
+  background-color: rgba(19,159,240,0.05);
+  padding: 10px 14px;
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+}
+
+/* --------------------------------------------------------------------------
+   12. DOWNLOAD LIST
+   -------------------------------------------------------------------------- */
+.downloadList {
+  margin: 0 0 40px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.downloadList-section-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--color-text-dark);
+  margin: 32px 0 8px 0;
+}
+
+.downloadList-section-title:first-child {
+  margin-top: 0;
+}
+
+.downloadList-item {
+  display: table;
+  width: 100%;
+  height: 64px;
+  padding: 0 7px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.downloadList-item:first-child {
+  border-top: 1px solid var(--color-border);
+}
+
+.downloadList-item:hover .downloadList-action > a {
+  display: inline-flex;
+}
+
+.downloadList-icon,
+.downloadList-name,
+.downloadList-date,
+.downloadList-action {
+  display: table-cell;
+  font-size: 14px;
+  line-height: 1.43;
+  vertical-align: middle;
+}
+
+.downloadList-icon {
+  width: 10%;
+  color: var(--color-text-body);
+}
+
+.flicon-pdf {
+  width: 16px;
+  height: 16px;
+  fill: var(--color-text-body);
+  vertical-align: middle;
+}
+
+.downloadList-name {
+  width: 60%;
+}
+
+.downloadList-name > a {
+  color: var(--color-text-dark);
+  font-size: 14px;
+}
+
+.downloadList-name > a:hover {
+  color: var(--color-brand-blue);
+}
+
+.downloadList-date {
+  width: 15%;
+  color: var(--color-text-muted);
+  font-size: 14px;
+}
+
+.downloadList-action {
+  width: 10%;
+  text-align: right;
+}
+
+.downloadList-action > a {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: 0;
+  color: var(--color-text-body);
+  padding: 4px;
+}
+
+.downloadList-action > a:hover {
+  color: var(--color-brand-blue);
+}
+
+.flicon-download-alt {
+  width: 20px;
+  height: 20px;
+  stroke: currentColor;
+  vertical-align: middle;
+}
+
+/* --------------------------------------------------------------------------
+   13. FAQ ITEMS
+   -------------------------------------------------------------------------- */
+.faq-item-block {
+  border-bottom: 1px solid var(--color-border);
+  padding: 20px 0;
+}
+
+.faq-item-block:first-of-type {
+  border-top: 1px solid var(--color-border);
+}
+
+.faq-item-question {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-text-dark);
+  margin-bottom: 12px;
+  line-height: 1.43;
+}
+
+/* --------------------------------------------------------------------------
+   14. CORPORATE GOVERNANCE
+   -------------------------------------------------------------------------- */
+.investorMain-terms-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 24px;
+}
+
+.investorMain-terms-list li {
+  padding: 4px 0;
+  font-size: 14px;
+  color: var(--color-text-body);
+}
+
+.sub-terms-list {
+  list-style: none;
+  padding-left: 16px;
+  margin-top: 4px;
+}
+
+.sub-terms-list li {
+  padding: 3px 0;
+  font-size: 13px;
+}
+
+.subheading-h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--color-text-dark);
+  margin: 28px 0 12px 0;
+}
+
+/* --------------------------------------------------------------------------
+   15. FOUNDATION SHAREHOLDER SECTION
+   -------------------------------------------------------------------------- */
+.shareholder-figure {
+  margin: 40px 0 36px;
+  text-align: center;
+}
+
+.shareholder-badge-img {
+  display: block;
+  margin: 0 auto;
+  max-width: 380px;
+  width: 100%;
+  height: auto;
+}
+
+.benefit-item {
+  margin-bottom: 20px;
+}
+
+.benefit-title {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-text-dark);
+  margin-bottom: 6px;
+}
+
+/* --------------------------------------------------------------------------
+   16. PRESS SIDEBAR CONTACT CARD
+   -------------------------------------------------------------------------- */
+.pressSidebar-header {
+  max-width: 258px;
+}
+
+.pressSidebar-content {
+  margin-top: 45px;
+}
+
+.pressSidebarContact {
+  margin-bottom: 24px;
+}
+
+.contact-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-text-dark);
+  margin-bottom: 10px;
+  line-height: 1.43;
+}
+
+.contact-line {
+  font-size: 13px;
+  color: var(--color-text-body);
+  line-height: 1.6;
+  margin-bottom: 2px;
+}
+
+.contact-label {
+  color: var(--color-text-dark);
+  font-weight: 500;
+}
+
+.contact-link {
+  color: var(--color-brand-blue);
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.contact-link:hover {
+  color: var(--color-hover-blue);
+  text-decoration: underline;
+}
+
+.company-name {
+  font-weight: 600;
+}
+
+/* --------------------------------------------------------------------------
+   17. SHAREHOLDER MODAL (Pure CSS :target)
+   -------------------------------------------------------------------------- */
+.shareholder-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  display: none;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 60px 20px 20px;
+  overflow-y: auto;
+  background-color: rgba(0,0,0,0.55);
+}
+
+.shareholder-modal:target {
+  display: flex;
+}
+
+.modal-backdrop-wrap {
+  position: relative;
+  width: 100%;
+  max-width: 720px;
+}
+
+.modal-dialog {
+  background-color: var(--color-bg-white);
+  border-radius: var(--radius-md);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.35);
+  overflow: hidden;
+  width: 100%;
+}
+
+.modal-header {
+  background-color: var(--color-text-dark);
+  padding: 28px 30px 24px;
+  position: relative;
+}
+
+.modal-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1;
+  padding-bottom: 14px;
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+
+.modal-subtitle {
+  font-size: 13px;
+  color: rgba(255,255,255,0.7);
+  margin-top: 10px;
+}
+
+.modal-close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: rgba(255,255,255,0.7);
+  font-size: 22px;
+  line-height: 1;
+  padding: 4px 8px;
+  border-radius: var(--radius-sm);
+  transition: var(--transition);
+  text-decoration: none;
+  display: inline-block;
+}
+
+.modal-close:hover {
+  color: #fff;
+  background-color: rgba(255,255,255,0.1);
+}
+
+.shareholder-form {
+  padding: 22px;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.fl-form {
+  width: 100%;
+}
+
+.form-row {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.form-col {
+  flex: 1 1 220px;
+  min-width: 0;
+}
+
+.full-col {
+  flex: 1 1 100%;
+}
+
+.form-label {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--color-text-dark);
+  margin-bottom: 6px;
+}
+
+.req {
+  color: var(--color-post-pink);
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 40px;
+  padding: 0 12px;
+  font-size: 14px;
+  font-family: var(--font-family);
+  color: var(--color-text-dark);
+  border: 1px solid var(--color-border-mid);
+  border-radius: var(--radius-sm);
+  background-color: #fff;
+  outline: none;
+  transition: border-color 0.15s ease;
+}
+
+.form-control:focus {
+  border-color: var(--color-accent-blue);
+  box-shadow: 0 0 0 3px rgba(19,159,240,0.12);
+}
+
+.file-drop-box {
+  border: 2px dashed var(--color-border-mid);
+  border-radius: var(--radius-md);
+  padding: 28px 16px;
+  text-align: center;
+  background-color: var(--color-bg-light);
+  position: relative;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.file-drop-box:hover {
+  border-color: var(--color-accent-blue);
+  background-color: rgba(19,159,240,0.04);
+}
+
+.file-icon {
+  font-size: 28px;
+  margin-bottom: 8px;
+  color: var(--color-text-muted);
+}
+
+.file-label {
+  display: block;
+  font-size: 13px;
+  color: var(--color-text-muted);
+  margin-bottom: 4px;
+}
+
+.file-input {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.modal-footer {
+  border-top: 1px solid var(--color-border-mid);
+  padding: 16px 22px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* --------------------------------------------------------------------------
+   18. FOOTER (FooterNew)
+   -------------------------------------------------------------------------- */
+.FooterNew {
+  background-color: var(--color-navy-dark);
+  color: rgba(255,255,255,0.75);
+}
+
+.FooterNew-content {
+  padding: 60px 0 40px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 220px 1fr 1fr 1fr 180px;
+  gap: 40px 30px;
+}
+
+.footer-col-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.FooterNew-logo {
+  display: inline-flex;
+  align-items: center;
+}
+
+.FooterNew-logo-img {
+  width: 62px;
+  height: auto;
+  display: block;
+  filter: brightness(0) invert(1);
+}
+
+.footer-locale-item {
+  display: block;
+}
+
+.FooterNew-subTitle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: rgba(255,255,255,0.65);
+  cursor: pointer;
+  transition: color 0.15s ease;
+  text-decoration: none;
+}
+
+.FooterNew-subTitle:hover {
+  color: rgba(255,255,255,0.9);
+}
+
+.FooterNew-subTitle-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.footer-svg-icon {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) invert(0.6);
+}
+
+.footer-col-links {
+  min-width: 0;
+}
+
+.FooterNew-link-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: rgba(255,255,255,0.9);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 14px;
+}
+
+.FooterNew-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.FooterNew-link {
+  font-size: 13px;
+  color: rgba(255,255,255,0.6);
+  transition: color 0.15s ease;
+}
+
+.FooterNew-link:hover {
+  color: rgba(255,255,255,0.95);
+}
+
+.FooterNew-link.active-link {
+  color: var(--color-accent-blue);
+}
+
+.footer-col-apps {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.FooterNew-appStoreIcons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.FooterNew-appStoreIcon {
+  display: inline-block;
+}
+
+.FooterNew-appStoreIcon-image {
+  height: 42px;
+  width: auto;
+  border-radius: var(--radius-md);
+}
+
+.FooterNew-social {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.FooterNew-social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.08);
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.FooterNew-social-icon:hover {
+  background: rgba(255,255,255,0.2);
+  transform: translateY(-2px);
+}
+
+.FooterNew-social-icon img {
+  width: 18px;
+  height: 18px;
+  filter: brightness(0) invert(1);
+}
+
+.footer-bottom-stats {
+  border-top: 1px solid rgba(255,255,255,0.08);
+  padding-top: 40px;
+  margin-top: 50px;
+}
+
+.stats-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.stat-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.SiteStat-value {
+  font-size: 26px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.2;
+}
+
+.SiteStat-name {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 2px;
+}
+
+.SiteStat-name-text {
+  font-size: 12px;
+  color: rgba(255,255,255,0.5);
+  line-height: 1.4;
+}
+
+.FooterNew-siteStat-term {
+  font-size: 12px;
+  line-height: 1.6;
+  color: rgba(255,255,255,0.4);
+}
+
+.legal-col {
+  max-width: 400px;
+  text-align: right;
+}
+
+/* --------------------------------------------------------------------------
+   19. RESPONSIVE QUERIES
+   -------------------------------------------------------------------------- */
+@media (max-width: 1000px) {
+  .container,
+  .masterBanner-inner {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+
+  .footer-col-brand {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 800px) {
+  .investorSidebar,
+  .investorMain {
+    float: none;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .investorMain {
+    margin-top: 30px;
+  }
+
+  .sidebarNav-list {
+    display: table;
+    width: 100%;
+    border-top: 1px solid var(--color-border);
+  }
+
+  .sidebarNav-list-item {
+    display: table-cell;
+    vertical-align: middle;
+    border-bottom: 1px solid var(--color-border);
+    text-align: center;
+  }
+
+  .sidebarNav-list-link {
+    font-size: 16px;
+    padding: 12px 8px;
+    text-align: center;
+  }
+
+  .masterBanner-section {
+    height: auto;
+    min-height: auto;
+    padding: 40px 0;
+  }
+
+  .masterBanner-inner {
+    display: block;
+    height: auto;
+    min-width: 0;
+    width: 100%;
+  }
+
+  .masterBanner-content {
+    display: block;
+    text-align: center;
+  }
+
+  .masterBanner-title {
+    font-size: 24px;
+    max-width: none;
+    margin-bottom: 12px;
+  }
+
+  .masterBanner-byline {
+    font-size: 18px;
+    max-width: none;
+    margin-bottom: 20px;
+  }
+
+  .masterBanner-cta {
+    max-width: none;
+    margin-top: 20px;
+  }
+
+  .input-btn-combo {
+    flex-direction: column;
+  }
+
+  .xlarge-input {
+    border-radius: var(--radius-sm);
+    width: 100%;
+  }
+
+  .btn-info.btn-xlarge {
+    border-radius: var(--radius-sm);
+    width: 100%;
+    margin-top: 8px;
+  }
+
+  .site-section-inner {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+@media (max-width: 700px) {
+  .header-inner {
+    padding: 0 12px;
+  }
+
+  .primary-nav {
+    display: none;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  .footer-col-brand {
+    grid-column: 1 / -1;
+  }
+
+  .stats-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .legal-col {
+    text-align: left;
+    max-width: none;
+  }
+
+  .downloadList-icon,
+  .downloadList-date {
+    display: none;
+  }
+
+  .downloadList-name {
+    width: 80%;
+  }
+
+  .downloadList-action > a {
+    display: inline-flex;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebarNav-list {
+    display: block;
+  }
+
+  .sidebarNav-list-item {
+    display: block;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .sidebarNav-list-link {
+    font-size: 18px;
+    padding: 16px 20px;
+    text-align: center;
+  }
+}

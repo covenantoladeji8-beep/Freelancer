@@ -1,0 +1,1247 @@
+/* ==========================================================================
+   FREELANCER CAREERS PAGE - REPLICA STYLESHEET
+   Pure CSS3 - Modern, Responsive, High-Fidelity, Zero-JS
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. VARIABLES & RESET
+   -------------------------------------------------------------------------- */
+:root {
+    --color-brand-blue: #007fed;
+    --color-accent-blue: #139ff0;
+    --color-hover-blue: #0090e3;
+    --color-cyan: #56c7ff;
+    --color-post-pink: #ff2272;
+    --color-post-pink-hover: #f51263;
+
+    --color-navy-dark: #161e2c;
+    --color-navy-subtle: #0f172a;
+
+    --color-text-dark: #0e1724;
+    --color-text-body: #4d525b;
+    --color-text-muted: #64748b;
+    --color-text-light: #94a3b8;
+    --color-text-white: #ffffff;
+
+    --color-border: #dedede;
+    --color-border-light: #e2e8f0;
+    --color-bg-light: #f3f5f8;
+    --color-bg-white: #ffffff;
+
+    --font-family: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    --font-display: 'Barlow', 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;
+    --container-width: 1240px;
+    --container-narrow-width: 776px;
+    --header-height: 64px;
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+    --transition-fast: all 0.2s ease-in-out;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    font-family: var(--font-family);
+    color: var(--color-text-dark);
+    background-color: var(--color-bg-white);
+    line-height: 1.5;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+img,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: var(--transition-fast);
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+button,
+input,
+textarea {
+    font-family: inherit;
+}
+
+/* --------------------------------------------------------------------------
+   2. REUSABLE CONTAINERS & UTILITIES
+   -------------------------------------------------------------------------- */
+.container {
+    width: 100%;
+    max-width: var(--container-width);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.container-narrow {
+    width: 100%;
+    max-width: var(--container-narrow-width);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.container-wide {
+    width: 100%;
+    max-width: 1176px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* --------------------------------------------------------------------------
+   3. HEADER & GLOBAL NAVIGATION
+   -------------------------------------------------------------------------- */
+.fl-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    height: var(--header-height);
+    background-color: var(--color-navy-dark);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 32px;
+    width: auto;
+}
+
+.primary-nav {
+    display: block;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.nav-link {
+    color: #cbd5e1;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 4px;
+}
+
+.nav-link:hover {
+    color: var(--color-text-white);
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.auth-link {
+    color: var(--color-text-white);
+    font-size: 14px;
+    font-weight: 500;
+    padding: 6px 10px;
+}
+
+.auth-link:hover {
+    opacity: 0.85;
+}
+
+.btn-post-project {
+    display: inline-block;
+    background-color: var(--color-post-pink);
+    color: var(--color-text-white);
+    font-size: 14px;
+    font-weight: 700;
+    padding: 9px 20px;
+    border-radius: var(--radius-sm);
+    transition: background-color 0.2s ease, transform 0.15s ease;
+    white-space: nowrap;
+}
+
+.btn-post-project:hover {
+    background-color: var(--color-post-pink-hover);
+    transform: translateY(-1px);
+}
+
+.sub-navbar-compat {
+    height: 2px;
+    background-color: var(--color-brand-blue);
+    width: 100%;
+}
+
+/* --------------------------------------------------------------------------
+   4. HERO SECTION
+   -------------------------------------------------------------------------- */
+.PageCareers-hero {
+    position: relative;
+    min-height: 520px;
+    background: url("https://www.f-cdn.com/assets/css/images/about-us/careers-hero-30e0e22a.jpg") no-repeat center top;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 0;
+    color: var(--color-text-white);
+}
+
+.SectionHero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(rgba(14, 23, 36, 0.72), rgba(14, 23, 36, 0.82));
+    z-index: 1;
+}
+
+.SectionHero-inner {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.SectionHero-content {
+    max-width: 860px;
+    margin: 0 auto;
+}
+
+.SectionHero-heading {
+    font-family: var(--font-display);
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 1.18;
+    letter-spacing: -0.5px;
+    margin-bottom: 22px;
+    color: var(--color-text-white);
+}
+
+.SectionHero-tagline {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #e2e8f0;
+    margin-bottom: 34px;
+}
+
+.btn-hero-cta {
+    display: inline-block;
+    background-color: var(--color-accent-blue);
+    color: var(--color-text-white);
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 15px 36px;
+    border-radius: var(--radius-sm);
+    box-shadow: 0 4px 14px rgba(19, 159, 240, 0.35);
+    transition: background-color 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+}
+
+.btn-hero-cta:hover {
+    background-color: var(--color-hover-blue);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(19, 159, 240, 0.5);
+}
+
+/* --------------------------------------------------------------------------
+   5. ABOUT FREELANCER & COMPANY VALUES SECTION
+   -------------------------------------------------------------------------- */
+.aboutFreelancer-section {
+    padding: 85px 0 65px;
+    background-color: var(--color-bg-white);
+}
+
+.bodyCopy {
+    margin-bottom: 45px;
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--color-text-dark);
+    line-height: 1.25;
+    margin-bottom: 18px;
+}
+
+.section-text {
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--color-text-body);
+}
+
+.sectionDivider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 60px 0 50px;
+    gap: 20px;
+}
+
+.sectionDivider-line {
+    flex: 1;
+    height: 1px;
+    background-color: var(--color-border);
+}
+
+.sectionDivider-text {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--color-text-body);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    white-space: nowrap;
+}
+
+.companyValues-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    padding: 10px 0 40px;
+}
+
+.companyValues {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 180px;
+    text-align: center;
+}
+
+.companyValues-icon-box {
+    width: 162px;
+    height: 162px;
+    background-image: url("image/values-logos-19697fed.png");
+    background-repeat: no-repeat;
+    margin: 0 auto 20px;
+    transition: transform 0.25s ease;
+}
+
+.companyValues:hover .companyValues-icon-box {
+    transform: translateY(-4px);
+}
+
+.value-icon-1 {
+    background-position: 0 0;
+}
+
+.value-icon-2 {
+    background-position: 0 -167px;
+}
+
+.value-icon-3 {
+    background-position: 0 -334px;
+}
+
+.value-icon-4 {
+    background-position: 0 -501px;
+}
+
+.value-icon-5 {
+    background-position: 0 -668px;
+}
+
+.companyValues-label {
+    color: var(--color-accent-blue);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.4;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* --------------------------------------------------------------------------
+   6. CULTURE COLLAGE BANNER
+   -------------------------------------------------------------------------- */
+.careersBanner {
+    height: 600px;
+    width: 100%;
+    background: url("https://www.f-cdn.com/assets/css/images/about-us/careers-banner-9994ed1d.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+/* --------------------------------------------------------------------------
+   7. TEAM CULTURE & SECONDARY BANNER SECTION
+   -------------------------------------------------------------------------- */
+.team-culture-section {
+    padding: 85px 0 70px;
+}
+
+.secondaryBanner {
+    margin: 40px auto 45px;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+}
+
+.secondaryBanner-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.highlight-text {
+    margin-top: 30px;
+}
+
+/* --------------------------------------------------------------------------
+   8. AWESOME PERKS SECTION
+   -------------------------------------------------------------------------- */
+.perks-section {
+    background-color: var(--color-brand-blue);
+    color: var(--color-text-white);
+    padding: 110px 0 95px;
+}
+
+.perks-title {
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 1.18;
+    text-align: center;
+    margin-bottom: 60px;
+    color: var(--color-text-white);
+}
+
+.perks-row {
+    display: grid;
+    gap: 36px;
+    margin: 0 auto;
+}
+
+.perks-grid-top {
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 45px;
+}
+
+.perks-grid-bottom {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.perks {
+    display: flex;
+    flex-direction: column;
+}
+
+.perks-heading {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.35;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    color: var(--color-text-white);
+}
+
+.perks-heading::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--color-cyan);
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+.perks-desc {
+    font-size: 14.5px;
+    line-height: 1.65;
+    color: rgba(255, 255, 255, 0.92);
+}
+
+/* --------------------------------------------------------------------------
+   9. JOB VACANCIES SECTION
+   -------------------------------------------------------------------------- */
+.jobVacancy-section {
+    background-color: var(--color-bg-light);
+    border-top: 1px solid var(--color-border);
+    padding: 90px 0 80px;
+    text-align: center;
+}
+
+.jobVacancy-section-heading {
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 10px;
+    color: var(--color-text-dark);
+}
+
+.jobVacancy-section-desc {
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--color-text-body);
+    max-width: 580px;
+    margin: 0 auto 40px;
+}
+
+/* Pure CSS Tabs via Hidden Radio Inputs */
+.dept-radio {
+    display: none;
+}
+
+.filter-tabs-bar {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 45px;
+}
+
+.filter-tab-label {
+    display: inline-block;
+    padding: 10px 22px;
+    background-color: var(--color-bg-white);
+    border: 1px solid var(--color-border);
+    border-radius: 24px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--color-text-body);
+    cursor: pointer;
+    transition: var(--transition-fast);
+}
+
+.filter-tab-label:hover {
+    border-color: var(--color-accent-blue);
+    color: var(--color-accent-blue);
+}
+
+#filter-all:checked~.filter-tabs-bar .tab-all,
+#filter-eng:checked~.filter-tabs-bar .tab-eng,
+#filter-prod:checked~.filter-tabs-bar .tab-prod,
+#filter-ops:checked~.filter-tabs-bar .tab-ops {
+    background-color: var(--color-accent-blue);
+    border-color: var(--color-accent-blue);
+    color: var(--color-text-white);
+    box-shadow: 0 4px 10px rgba(19, 159, 240, 0.25);
+}
+
+/* Card Filtering */
+#filter-eng:checked~.jobVacancy-grid .jobVacancy-card:not(.dept-eng) {
+    display: none;
+}
+
+#filter-prod:checked~.jobVacancy-grid .jobVacancy-card:not(.dept-prod) {
+    display: none;
+}
+
+#filter-ops:checked~.jobVacancy-grid .jobVacancy-card:not(.dept-ops) {
+    display: none;
+}
+
+/* Job Cards Grid */
+.jobVacancy-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 24px;
+    text-align: left;
+}
+
+.jobVacancy-card {
+    background-color: var(--color-bg-white);
+    border: 1px solid var(--color-border-light);
+    border-radius: var(--radius-md);
+    padding: 26px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.jobVacancy-card:hover {
+    border-color: var(--color-accent-blue);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(19, 159, 240, 0.12);
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 14px;
+}
+
+.job-badge {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 4px 10px;
+    border-radius: 12px;
+}
+
+.dept-badge-eng {
+    background-color: #e0f2fe;
+    color: #0284c7;
+}
+
+.dept-badge-prod {
+    background-color: #f3e8ff;
+    color: #7e22ce;
+}
+
+.dept-badge-ops {
+    background-color: #fef3c7;
+    color: #b45309;
+}
+
+.job-type-badge {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--color-text-muted);
+}
+
+.job-card-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--color-text-dark);
+    line-height: 1.3;
+    margin-bottom: 8px;
+}
+
+.job-card-location {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13.5px;
+    color: var(--color-text-muted);
+    margin-bottom: 14px;
+}
+
+.location-icon {
+    flex-shrink: 0;
+    color: var(--color-accent-blue);
+}
+
+.job-card-summary {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--color-text-body);
+    margin-bottom: 24px;
+}
+
+.job-card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 16px;
+    border-top: 1px solid #f1f5f9;
+}
+
+.job-salary {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--color-text-muted);
+}
+
+.btn-apply {
+    display: inline-block;
+    background-color: var(--color-accent-blue);
+    color: var(--color-text-white);
+    font-size: 13.5px;
+    font-weight: 700;
+    padding: 8px 18px;
+    border-radius: var(--radius-sm);
+    transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+.btn-apply:hover {
+    background-color: var(--color-hover-blue);
+    transform: translateX(2px);
+}
+
+/* --------------------------------------------------------------------------
+   10. PURE CSS APPLICATION MODAL (#job-modal)
+   -------------------------------------------------------------------------- */
+.fl-modal {
+    display: none;
+}
+
+.fl-modal:target {
+    display: flex;
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.modal-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(14, 23, 36, 0.75);
+    backdrop-filter: blur(4px);
+    cursor: default;
+}
+
+.fl-modal-dialog {
+    position: relative;
+    z-index: 10000;
+    width: 100%;
+    max-width: 960px;
+    max-height: 90vh;
+    background: var(--color-bg-white);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
+    display: flex;
+    flex-direction: column;
+    animation: modalFadeIn 0.25s ease-out;
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.96) translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+.fl-modal-close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #f1f5f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-text-dark);
+    z-index: 10;
+    transition: var(--transition-fast);
+}
+
+.fl-modal-close:hover {
+    background: #e2e8f0;
+    color: var(--color-post-pink);
+}
+
+.fl-modal-body {
+    display: grid;
+    grid-template-columns: 1fr 1.15fr;
+    overflow-y: auto;
+    max-height: calc(90vh - 20px);
+}
+
+.jobApplication-modal-abstract {
+    padding: 40px;
+    background-color: var(--color-bg-white);
+    overflow-y: auto;
+}
+
+.modal-pretitle {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--color-accent-blue);
+    display: block;
+    margin-bottom: 6px;
+}
+
+.jobApplication-modal-heading {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--color-text-dark);
+    line-height: 1.25;
+    margin-bottom: 6px;
+}
+
+.modal-location {
+    font-size: 14px;
+    color: var(--color-text-muted);
+    margin-bottom: 28px;
+}
+
+.jobApplication-modal-section {
+    margin-bottom: 24px;
+}
+
+.jobApplication-modal-section-heading {
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--color-text-dark);
+    margin-bottom: 8px;
+}
+
+.jobApplication-modal-section-description {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--color-text-body);
+}
+
+.modal-bullets {
+    padding-left: 20px;
+    list-style: disc;
+}
+
+.modal-bullets li {
+    font-size: 13.5px;
+    line-height: 1.6;
+    color: var(--color-text-body);
+    margin-bottom: 6px;
+}
+
+/* Modal Form Container */
+.jobApplication-modal-formContainer {
+    padding: 40px;
+    background-color: #f8fafc;
+    border-left: 1px solid var(--color-border-light);
+    overflow-y: auto;
+}
+
+.form-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--color-text-dark);
+    margin-bottom: 24px;
+}
+
+.form-steps-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.form-step {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-label {
+    font-size: 13.5px;
+    font-weight: 600;
+    color: var(--color-text-dark);
+    margin-bottom: 6px;
+}
+
+.requiredMarker {
+    color: var(--color-post-pink);
+}
+
+.default-input,
+.default-textarea {
+    width: 100%;
+    padding: 10px 14px;
+    font-size: 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: var(--radius-sm);
+    background-color: var(--color-bg-white);
+    color: var(--color-text-dark);
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.default-input:focus,
+.default-textarea:focus {
+    border-color: var(--color-accent-blue);
+    box-shadow: 0 0 0 3px rgba(19, 159, 240, 0.15);
+}
+
+.file-uploader-area {
+    border: 2px dashed #cbd5e1;
+    border-radius: var(--radius-sm);
+    padding: 16px;
+    text-align: center;
+    background-color: var(--color-bg-white);
+    cursor: pointer;
+}
+
+.file-uploader-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    color: var(--color-text-muted);
+    cursor: pointer;
+}
+
+.upload-icon {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--color-accent-blue);
+}
+
+.fileupload-input {
+    display: none;
+}
+
+.btn-submit-app {
+    width: 100%;
+    background-color: var(--color-accent-blue);
+    color: var(--color-text-white);
+    font-size: 15px;
+    font-weight: 700;
+    padding: 12px;
+    border-radius: var(--radius-sm);
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.2s ease;
+}
+
+.btn-submit-app:hover {
+    background-color: var(--color-hover-blue);
+}
+
+/* --------------------------------------------------------------------------
+   11. FULL FREELANCER 5-COLUMN FOOTER
+   -------------------------------------------------------------------------- */
+.FooterNew {
+    background-color: var(--color-navy-dark);
+    color: var(--color-text-white);
+    padding: 70px 0 35px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1.8fr 1.2fr 1.2fr 1.2fr 1.6fr;
+    gap: 32px;
+}
+
+.footer-col-brand {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.FooterNew-logo {
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+.FooterNew-logo-img {
+    width: 62px;
+    height: 40px;
+}
+
+.FooterNew-subTitle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: #cbd5e1;
+    transition: color 0.2s ease;
+    cursor: pointer;
+}
+
+.FooterNew-subTitle:hover {
+    color: var(--color-text-white);
+}
+
+.FooterNew-subTitle-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+.footer-icon-svg {
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) invert(1);
+    opacity: 0.85;
+}
+
+.FooterNew-link-title {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--color-text-white);
+    margin-bottom: 20px;
+}
+
+.FooterNew-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.FooterNew-link {
+    font-size: 13.5px;
+    color: var(--color-text-light);
+    transition: color 0.2s ease;
+}
+
+.FooterNew-link:hover {
+    color: var(--color-text-white);
+    text-decoration: underline;
+}
+
+.FooterNew-link.active-link {
+    color: var(--color-accent-blue);
+    font-weight: 600;
+}
+
+/* Apps & Social */
+.FooterNew-appStoreIcons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.FooterNew-appStoreIcon {
+    display: inline-block;
+}
+
+.FooterNew-appStoreIcon-image {
+    height: 42px;
+    width: auto;
+    border-radius: 4px;
+}
+
+.FooterNew-social {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.FooterNew-social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.08);
+    transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.FooterNew-social-icon:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+.FooterNew-social-icon img {
+    width: 18px;
+    height: 18px;
+    filter: brightness(0) invert(1);
+}
+
+/* Footer Bottom Statistics & Legal */
+.footer-bottom-stats {
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    padding-top: 40px;
+    margin-top: 50px;
+}
+
+.stats-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.stat-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.SiteStat-value {
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--color-text-white);
+    line-height: 1.2;
+}
+
+.SiteStat-name-text {
+    font-size: 13px;
+    color: var(--color-text-light);
+}
+
+.legal-col {
+    max-width: 500px;
+}
+
+.FooterNew-siteStat-term {
+    font-size: 12px;
+    line-height: 1.6;
+    color: var(--color-text-muted);
+}
+
+/* --------------------------------------------------------------------------
+   12. RESPONSIVE MEDIA QUERIES
+   -------------------------------------------------------------------------- */
+@media (max-width: 1100px) {
+    .footer-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+    }
+
+    .perks-grid-top {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .perks-grid-bottom {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 860px) {
+    .SectionHero-heading {
+        font-size: 36px;
+    }
+
+    .SectionHero-tagline {
+        font-size: 16px;
+    }
+
+    .careersBanner {
+        height: 420px;
+    }
+
+    .fl-modal-body {
+        grid-template-columns: 1fr;
+    }
+
+    .jobApplication-modal-formContainer {
+        border-left: none;
+        border-top: 1px solid var(--color-border-light);
+    }
+
+    .stats-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .legal-col {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .primary-nav {
+        display: none;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    .perks-grid-top,
+    .perks-grid-bottom {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .jobVacancy-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .companyValues {
+        width: 140px;
+    }
+
+    .companyValues-icon-box {
+        transform: scale(0.85);
+        margin-bottom: 8px;
+    }
+}
+
+@media (max-width: 500px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .filter-tabs-bar {
+        flex-direction: column;
+    }
+
+    .filter-tab-label {
+        text-align: center;
+    }
+
+    .SectionHero-heading {
+        font-size: 28px;
+    }
+
+    .section-title {
+        font-size: 26px;
+    }
+
+    .perks-title {
+        font-size: 32px;
+    }
+
+    .jobVacancy-section-heading {
+        font-size: 30px;
+    }
+
+    .careersBanner {
+        height: 300px;
+    }
+
+    .header-inner {
+        padding: 0 16px;
+    }
+
+    .btn-post-project {
+        padding: 7px 14px;
+        font-size: 13px;
+    }
+}

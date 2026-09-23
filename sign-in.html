@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="sign-in.css">
+    <link rel="shortcut icon" href="freecon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <title>User Signup | Freelancer</title>
+</head>
+
+<body class="d-flex">
+    <div class="left container-fluid d-flex justify-content-center align-items-center col-8 position-absolute start-0">
+        <section
+            class="container-fluid d-flex flex-column justify-content-center position-absolute align-items-center sect">
+            <img src="https://www.f-cdn.com/assets/main/en/assets/freelancer-logo.svg" alt="image">
+            <h2 class="text-center fs-4 fw-bolder py-4">Sign up</h2>
+            <button class="btn butt fs-6 d-flex justify-content-around align-items-center pe-5"><img
+                    src="https://www.gstatic.com/images/branding/googleg_gradient/svg/googleg_gradient_standard_24px.svg"
+                    alt="image">Continue with Google</button>
+            <button class="btn butt fs-6 fw-bold d-flex justify-content-around align-items-center mt-5 pe-5"><img
+                    src="https://www.f-cdn.com/assets/main/en/assets/facebook/facebook-icon-rounded.svg"
+                    alt="image">Continue with Facebook</button>
+            <div class="d-flex align-items-center justify-content-center line mt-6">
+                <hr class="flex-grow-1">
+                <p class="px-3 mt-3">OR</p>
+                <hr class="flex-grow-1">
+            </div>
+            <div class="form-cont">
+                <form action="login.html" class="form-group">
+                    <div class="two-inp mb-3 d-flex justify-content-between">
+                        <input type="text" placeholder="First Name" required>
+                        <input type="text" placeholder="Last Name" required>
+                    </div>
+                    <input type="email" placeholder="Email" class="my-3" required>
+                    <input type="password" id="password" class="my-3" placeholder="Password" required>
+                    <span class="btn toggle-password" onclick="togglePasswordVisibility()">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#000000"><path d="M607.5-372.5Q660-425 660-500t-52.5-127.5Q555-680 480-680t-127.5 52.5Q300-575 300-500t52.5 127.5Q405-320 480-320t127.5-52.5Zm-204-51Q372-455 372-500t31.5-76.5Q435-608 480-608t76.5 31.5Q588-545 588-500t-31.5 76.5Q525-392 480-392t-76.5-31.5ZM214-281.5Q94-363 40-500q54-137 174-218.5T480-800q146 0 266 81.5T920-500q-54 137-174 218.5T480-200q-146 0-266-81.5ZM480-500Zm207.5 160.5Q782-399 832-500q-50-101-144.5-160.5T480-720q-113 0-207.5 59.5T128-500q50 101 144.5 160.5T480-280q113 0 207.5-59.5Z"/></svg>
+                    </span>
+                    <div class="word d-flex flex-column justify-content-between align-items-center">
+                        <div class="word-cont1 d-flex mt-5">
+                            <input type="checkbox" class="mt-2">
+                            <span class="fs-6 ms-2">I agree to freelancer <a href=""
+                                    class="text-decoration-underline">User Agreement</a> and <a href=""
+                                    class="text-decoration-underline">Privacy Policy</a>.</span>
+                        </div>
+                        <button class="btn btn-primary log-btn mt-5 fs-5 fw-bolder">Join Freelancer</button>
+                </form>
+            </div>
+            <hr class="nhr mt-5">
+            <p class="mt-3 fs-6 text-center last">Already have an account? <a href="log-in.html">Log in</a></p>
+        </section>
+    </div>
+    <div class="right container-fluid col-4 position-fixed end-0">
+        <img src="https://www.f-cdn.com/assets/main/en/assets/job-post/redesign/bird.jpg" alt="image">
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
